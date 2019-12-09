@@ -19,6 +19,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cS3-Y6-nq7">
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                                <color key="backgroundColor" red="0.039196782329999999" green="0.64428837439999997" blue="0.054890037910000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="U5o-oC-KYZ">
                                 <rect key="frame" x="44" y="0.0" width="808" height="393"/>
                                 <subviews>
@@ -100,15 +104,40 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="cS3-Y6-nq7" firstAttribute="top" secondItem="3se-qz-xqx" secondAttribute="top" id="1RY-0f-loV"/>
+                            <constraint firstAttribute="trailing" secondItem="cS3-Y6-nq7" secondAttribute="trailing" id="EQY-qq-gaG"/>
                             <constraint firstItem="U5o-oC-KYZ" firstAttribute="top" secondItem="3se-qz-xqx" secondAttribute="top" id="FUw-LD-rTR"/>
+                            <constraint firstItem="cS3-Y6-nq7" firstAttribute="leading" secondItem="3se-qz-xqx" secondAttribute="leadingMargin" id="KMF-El-1in"/>
                             <constraint firstItem="4qk-I5-YsI" firstAttribute="bottom" secondItem="U5o-oC-KYZ" secondAttribute="bottom" id="KS4-wr-vpw"/>
+                            <constraint firstAttribute="bottom" secondItem="cS3-Y6-nq7" secondAttribute="bottom" id="Loo-Y3-BXu"/>
                             <constraint firstItem="4qk-I5-YsI" firstAttribute="trailing" secondItem="U5o-oC-KYZ" secondAttribute="trailing" id="Vn5-T8-jH5"/>
+                            <constraint firstItem="cS3-Y6-nq7" firstAttribute="leading" secondItem="3se-qz-xqx" secondAttribute="leading" id="YTI-td-ZGP"/>
                             <constraint firstItem="U5o-oC-KYZ" firstAttribute="leading" secondItem="4qk-I5-YsI" secondAttribute="leading" id="lDw-0N-cMC"/>
+                            <constraint firstItem="cS3-Y6-nq7" firstAttribute="top" secondItem="3se-qz-xqx" secondAttribute="topMargin" id="vIH-LJ-S6E"/>
+                            <constraint firstItem="cS3-Y6-nq7" firstAttribute="centerX" secondItem="3se-qz-xqx" secondAttribute="centerX" id="waI-5V-ci0"/>
+                            <constraint firstItem="cS3-Y6-nq7" firstAttribute="centerY" secondItem="3se-qz-xqx" secondAttribute="centerY" id="ziV-bV-9Yp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4qk-I5-YsI"/>
                     </view>
+                    <connections>
+                        <outlet property="mainView" destination="3se-qz-xqx" id="xtk-C1-XM1"/>
+                        <outletCollection property="buttonArray" destination="a32-DE-8RX" collectionClass="NSMutableArray" id="7P8-Hn-Vl4"/>
+                        <outletCollection property="buttonArray" destination="Nt9-mQ-ppX" collectionClass="NSMutableArray" id="Qlh-RJ-ner"/>
+                        <outletCollection property="buttonArray" destination="T7c-kb-NUM" collectionClass="NSMutableArray" id="MIN-nf-mi0"/>
+                        <outletCollection property="buttonArray" destination="Vdz-f4-pPt" collectionClass="NSMutableArray" id="rVo-s7-xke"/>
+                        <outletCollection property="buttonArray" destination="fgS-SO-798" collectionClass="NSMutableArray" id="sHs-Cd-oG2"/>
+                        <outletCollection property="buttonArray" destination="a8e-UC-XUJ" collectionClass="NSMutableArray" id="js7-5a-hgg"/>
+                        <outletCollection property="buttonArray" destination="fPe-Js-EjR" collectionClass="NSMutableArray" id="bro-cU-jo2"/>
+                        <outletCollection property="buttonArray" destination="XVu-Fh-XHM" collectionClass="NSMutableArray" id="4nt-Bw-1v1"/>
+                        <outletCollection property="buttonArray" destination="e6L-tK-Ibw" collectionClass="NSMutableArray" id="gfQ-t5-QHB"/>
+                        <outletCollection property="buttonArray" destination="1Yv-vK-La6" collectionClass="NSMutableArray" id="pav-OM-NoW"/>
+                        <outletCollection property="buttonArray" destination="Z77-Tv-1Nr" collectionClass="NSMutableArray" id="QXd-0R-lgz"/>
+                        <outletCollection property="buttonArray" destination="Peb-kM-2HA" collectionClass="NSMutableArray" id="T0i-YC-Phn"/>
+                        <outletCollection property="buttonArray" destination="JY7-Nt-G2C" collectionClass="NSMutableArray" id="uVm-7Q-i45"/>
+                        <outletCollection property="buttonArray" destination="Tzr-Ld-pAt" collectionClass="NSMutableArray" id="ecL-sz-C1A"/>
+                        <outletCollection property="buttonArray" destination="mqY-9R-yKY" collectionClass="NSMutableArray" id="1IJ-Ry-vy1"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="131.91964285714286" y="137.68115942028987"/>

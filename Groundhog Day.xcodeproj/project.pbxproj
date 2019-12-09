@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		37A361762396C12200D50664 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A361752396C12200D50664 /* AppDelegate.swift */; };
-		37A361782396C12200D50664 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 37A361772396C12200D50664 /* GameScene.sks */; };
 		37A3617A2396C12200D50664 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 37A361792396C12200D50664 /* Actions.sks */; };
 		37A3617C2396C12200D50664 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A3617B2396C12200D50664 /* GameScene.swift */; };
 		37A3617E2396C12200D50664 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A3617D2396C12200D50664 /* GameViewController.swift */; };
@@ -39,7 +38,6 @@
 /* Begin PBXFileReference section */
 		37A361722396C12200D50664 /* Groundhog Day.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Groundhog Day.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		37A361752396C12200D50664 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		37A361772396C12200D50664 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		37A361792396C12200D50664 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		37A3617B2396C12200D50664 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		37A3617D2396C12200D50664 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
@@ -104,7 +102,6 @@
 			isa = PBXGroup;
 			children = (
 				37A361752396C12200D50664 /* AppDelegate.swift */,
-				37A361772396C12200D50664 /* GameScene.sks */,
 				37A361792396C12200D50664 /* Actions.sks */,
 				37A3617B2396C12200D50664 /* GameScene.swift */,
 				37A3617D2396C12200D50664 /* GameViewController.swift */,
@@ -239,7 +236,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				37A361812396C12200D50664 /* Main.storyboard in Resources */,
-				37A361782396C12200D50664 /* GameScene.sks in Resources */,
 				37A361832396C12400D50664 /* Assets.xcassets in Resources */,
 				37A361862396C12400D50664 /* LaunchScreen.storyboard in Resources */,
 				37A3617A2396C12200D50664 /* Actions.sks in Resources */,

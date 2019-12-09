@@ -12,8 +12,16 @@ import GameplayKit
 
 class GameViewController: UIViewController
 {
+    @IBOutlet var mainView: SKView!
+    @IBOutlet var buttonArray: [UIButton]!
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        
+        
+        
+        let value = UIInterfaceOrientation.landscapeRight.rawValue
+        UIDevice.current.setValue(value, forKey: "orientation")
     }
 }
