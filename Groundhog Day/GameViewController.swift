@@ -14,14 +14,32 @@ class GameViewController: UIViewController
 {
     @IBOutlet var mainView: SKView!
     @IBOutlet var buttonArray: [UIButton]!
+    @IBOutlet var viewArray: [UIView]!
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
         
-        
-        
         let value = UIInterfaceOrientation.landscapeRight.rawValue
         UIDevice.current.setValue(value, forKey: "orientation")
+    }
+}
+
+class Pit
+{
+    var index = Int()
+    var hasHog = Bool()
+    
+    @IBAction func tapPit(_ sender: UIButton)
+    {
+        if !hasHog
+        {
+            
+        }
+        
+        else
+        {
+            
+        }
     }
 }
