@@ -15,6 +15,7 @@ class GameViewController: UIViewController
     @IBOutlet var mainView: SKView!
     @IBOutlet var buttonArray: [UIButton]!
     @IBOutlet var viewArray: [UIView]!
+    @IBOutlet var moleImageArray: [UIImageView]!
     
     override func viewDidLoad()
     {
