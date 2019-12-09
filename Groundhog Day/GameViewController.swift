@@ -9,6 +9,7 @@
 import UIKit
 import SpriteKit
 import GameplayKit
+import Foundation
 
 class GameViewController: UIViewController
 {
@@ -21,26 +22,25 @@ class GameViewController: UIViewController
     {
         super.viewDidLoad()
         
-        let value = UIInterfaceOrientation.landscapeRight.rawValue
-        UIDevice.current.setValue(value, forKey: "orientation")
+        for mole in moleImageArray
+        {
+            mole.isHidden = true
+        }
+        
+        //Turn phone into landscape
+        //let value = UIInterfaceOrientation.landscapeRight.rawValue
+        //UIDevice.current.setValue(value, forKey: "orientation")
+    }
+    
+    @IBAction func tapPit(_ sender: UIButton) //If the player taps the pit
+    {
+        
     }
 }
 
 class Pit
 {
-    var index = Int()
-    var hasHog = Bool()
-    
-    @IBAction func tapPit(_ sender: UIButton)
-    {
-        if !hasHog
-        {
-            
-        }
-        
-        else
-        {
-            
-        }
-    }
+    var index = Int() //Index of buttonArray, viewArray, moleImageArray
+    var hasHog = Bool() //If a hog is visibile in a pit
+
 }
