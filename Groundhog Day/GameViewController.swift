@@ -10,15 +10,20 @@ import UIKit
 import SpriteKit
 import GameplayKit
 import Foundation
+import UserNotifications
 
 class GameViewController: UIViewController
 {
+    @IBOutlet weak var sceneView: SKView!
+    
     @IBOutlet var mainView: SKView!
     @IBOutlet var buttonArray: [UIButton]!
     @IBOutlet var viewArray: [UIView]!
     @IBOutlet var moleImageArray: [UIImageView]!
     
     @IBOutlet var timerLabel: UILabel!
+    var scene: HammerScene?
+    
     
     var moleObj: [Pit] = []
     
@@ -26,9 +31,12 @@ class GameViewController: UIViewController
     var difficulty: Double = 1 //Can be 1(easy), 2(medium), or 4(hard)
     var numberOfMoles: Double = 2 //Cannot be more than 15
     
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        
+        sceneView.alpha = 0.1
         
         for (index, mole) in moleImageArray.enumerated()
         {
@@ -46,6 +54,21 @@ class GameViewController: UIViewController
         //let value = UIInterfaceOrientation.landscapeRight.rawValue
         //UIDevice.current.setValue(value, forKey: "orientation")
     }
+    
+    override func viewDidAppear(_ animated: Bool)
+    {
+        super.viewDidAppear(animated)
+        
+        self.scene = HammerScene(size: CGSize(width: self.sceneView.frame.size.width, height: self.sceneView.frame.size.height))
+        self.sceneView.presentScene(scene)
+    }
+    
+    @IBAction func Hit(_ sender: UIButton)
+    {
+        if let scene = self.scene {
+            scene.runHit(x: (buttonArray[8].bounds.maxX + buttonArray[0].bounds.minX)/2 , y: (buttonArray[8].bounds.maxY + buttonArray[0].bounds.minY)/2)
+        }
+    } 
     
     @objc func checkTimeRemaining()
     {
@@ -150,5 +173,7 @@ class GameViewController: UIViewController
         }
     }
 }
+
+
 
 
