@@ -569,6 +569,7 @@
                     </view>
                     <connections>
                         <outlet property="mainView" destination="3se-qz-xqx" id="xtk-C1-XM1"/>
+                        <outlet property="timerLabel" destination="20L-74-0Mx" id="unJ-bh-96L"/>
                         <outletCollection property="buttonArray" destination="a32-DE-8RX" collectionClass="NSMutableArray" id="7P8-Hn-Vl4"/>
                         <outletCollection property="buttonArray" destination="C5y-OQ-Dln" collectionClass="NSMutableArray" id="IVV-tC-9K7"/>
                         <outletCollection property="buttonArray" destination="BZA-Ni-5Ov" collectionClass="NSMutableArray" id="Qfi-qo-aP2"/>
