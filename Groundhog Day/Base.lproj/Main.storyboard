@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
-    <device id="retina6_1" orientation="landscape">
+    <device id="retina6_5" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -20,25 +20,54 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cS3-Y6-nq7">
                                 <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
-                                <color key="backgroundColor" red="0.039196782329999999" green="0.64428837439999997" blue="0.054890037910000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.043375052511692047" green="0.64264428615570068" blue="0.054528988897800446" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="U5o-oC-KYZ">
                                 <rect key="frame" x="44" y="0.0" width="808" height="393"/>
                                 <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="847-rh-lkd">
+                                        <rect key="frame" x="0.0" y="0.0" width="808" height="90.666666666666671"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="20L-74-0Mx">
+                                                <rect key="frame" x="0.0" y="0.0" width="404" height="90.666666666666671"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Timer">
+                                                        <attributes>
+                                                            <font key="NSFont" size="24" name="HelveticaNeue-Bold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SZc-7P-r9l">
+                                                <rect key="frame" x="404" y="0.0" width="404" height="90.666666666666671"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Score">
+                                                        <attributes>
+                                                            <font key="NSFont" size="24" name="HelveticaNeue-Bold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Qpy-eb-79b">
-                                        <rect key="frame" x="0.0" y="0.0" width="808" height="124.5"/>
+                                        <rect key="frame" x="0.0" y="100.66666666666669" width="808" height="91"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7G7-GJ-Kzp">
-                                                <rect key="frame" x="0.0" y="0.0" width="153.5" height="124.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="153.66666666666666" height="91"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hole" translatesAutoresizingMaskIntoConstraints="NO" id="cSV-V1-5TD">
-                                                        <rect key="frame" x="0.0" y="50" width="153.5" height="74.5"/>
+                                                        <rect key="frame" x="0.0" y="49.999999999999986" width="153.66666666666666" height="41"/>
                                                     </imageView>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mole" highlightedImage="Mole" translatesAutoresizingMaskIntoConstraints="NO" id="poc-kt-axt">
-                                                        <rect key="frame" x="0.0" y="0.0" width="153.5" height="94.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="153.66666666666666" height="81"/>
                                                     </imageView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a32-DE-8RX">
-                                                        <rect key="frame" x="0.0" y="0.0" width="153.5" height="124.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="153.66666666666666" height="91"/>
                                                         <connections>
                                                             <action selector="tapPit:" destination="SZV-WD-TEh" eventType="touchUpInside" id="B7R-u7-G9J"/>
                                                         </connections>
@@ -52,7 +81,7 @@
                                                     <constraint firstAttribute="bottom" secondItem="a32-DE-8RX" secondAttribute="bottom" id="7Pn-aV-5BO"/>
                                                     <constraint firstAttribute="bottom" secondItem="cSV-V1-5TD" secondAttribute="bottom" id="7Yj-ks-tKF"/>
                                                     <constraint firstItem="poc-kt-axt" firstAttribute="leading" secondItem="7G7-GJ-Kzp" secondAttribute="leading" id="Fhv-b6-HcV"/>
-                                                    <constraint firstAttribute="bottom" secondItem="poc-kt-axt" secondAttribute="bottom" constant="30" id="L8B-BJ-aNg"/>
+                                                    <constraint firstAttribute="bottom" secondItem="poc-kt-axt" secondAttribute="bottom" constant="10" id="L8B-BJ-aNg"/>
                                                     <constraint firstItem="cSV-V1-5TD" firstAttribute="top" secondItem="7G7-GJ-Kzp" secondAttribute="top" constant="50" id="V62-I9-62B"/>
                                                     <constraint firstItem="cSV-V1-5TD" firstAttribute="leading" secondItem="7G7-GJ-Kzp" secondAttribute="leading" id="dzz-ux-ZJh"/>
                                                     <constraint firstAttribute="trailing" secondItem="a32-DE-8RX" secondAttribute="trailing" id="eiW-2h-lxq"/>
@@ -61,16 +90,16 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QzR-fT-4vb">
-                                                <rect key="frame" x="163.5" y="0.0" width="153.5" height="124.5"/>
+                                                <rect key="frame" x="163.66666666666669" y="0.0" width="153.66666666666669" height="91"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hole" translatesAutoresizingMaskIntoConstraints="NO" id="dZS-MT-F44">
-                                                        <rect key="frame" x="0.0" y="50" width="153.5" height="74.5"/>
+                                                        <rect key="frame" x="0.0" y="49.999999999999986" width="153.66666666666666" height="41"/>
                                                     </imageView>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mole" highlightedImage="Mole" translatesAutoresizingMaskIntoConstraints="NO" id="ixB-cO-6Q8">
-                                                        <rect key="frame" x="0.0" y="0.0" width="153.5" height="94.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="153.66666666666666" height="81"/>
                                                     </imageView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C5y-OQ-Dln">
-                                                        <rect key="frame" x="0.0" y="0.0" width="153.5" height="124.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="153.66666666666666" height="91"/>
                                                         <connections>
                                                             <action selector="tapPit:" destination="SZV-WD-TEh" eventType="touchUpInside" id="cJe-MT-Goh"/>
                                                         </connections>
@@ -80,7 +109,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="trailing" secondItem="dZS-MT-F44" secondAttribute="trailing" id="83M-5o-PWV"/>
                                                     <constraint firstItem="dZS-MT-F44" firstAttribute="top" secondItem="QzR-fT-4vb" secondAttribute="top" constant="50" id="8rP-Gh-SXk"/>
-                                                    <constraint firstAttribute="bottom" secondItem="ixB-cO-6Q8" secondAttribute="bottom" constant="30" id="FiP-gU-6Ax"/>
+                                                    <constraint firstAttribute="bottom" secondItem="ixB-cO-6Q8" secondAttribute="bottom" constant="10" id="FiP-gU-6Ax"/>
                                                     <constraint firstItem="ixB-cO-6Q8" firstAttribute="top" secondItem="QzR-fT-4vb" secondAttribute="top" id="MKj-r0-MPL"/>
                                                     <constraint firstAttribute="bottom" secondItem="dZS-MT-F44" secondAttribute="bottom" id="SDK-Ju-rQz"/>
                                                     <constraint firstItem="ixB-cO-6Q8" firstAttribute="leading" secondItem="QzR-fT-4vb" secondAttribute="leading" id="TzP-L7-m6P"/>
@@ -93,16 +122,16 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V9J-Ex-lZJ">
-                                                <rect key="frame" x="327" y="0.0" width="154" height="124.5"/>
+                                                <rect key="frame" x="327.33333333333331" y="0.0" width="153.33333333333331" height="91"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hole" translatesAutoresizingMaskIntoConstraints="NO" id="VyM-nC-76h">
-                                                        <rect key="frame" x="0.0" y="50" width="154" height="74.5"/>
+                                                        <rect key="frame" x="0.0" y="49.999999999999986" width="153.33333333333334" height="41"/>
                                                     </imageView>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mole" highlightedImage="Mole" translatesAutoresizingMaskIntoConstraints="NO" id="4Ju-Ub-h27">
-                                                        <rect key="frame" x="0.0" y="0.0" width="154" height="94.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="153.33333333333334" height="81"/>
                                                     </imageView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BZA-Ni-5Ov">
-                                                        <rect key="frame" x="0.0" y="0.0" width="154" height="124.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="153.33333333333334" height="91"/>
                                                         <connections>
                                                             <action selector="tapPit:" destination="SZV-WD-TEh" eventType="touchUpInside" id="1nn-b0-1qN"/>
                                                         </connections>
@@ -112,7 +141,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="bottom" secondItem="BZA-Ni-5Ov" secondAttribute="bottom" id="AyZ-y5-jjt"/>
                                                     <constraint firstItem="VyM-nC-76h" firstAttribute="top" secondItem="V9J-Ex-lZJ" secondAttribute="top" constant="50" id="DMo-P0-gPZ"/>
-                                                    <constraint firstAttribute="bottom" secondItem="4Ju-Ub-h27" secondAttribute="bottom" constant="30" id="HeN-aG-DHd"/>
+                                                    <constraint firstAttribute="bottom" secondItem="4Ju-Ub-h27" secondAttribute="bottom" constant="10" id="HeN-aG-DHd"/>
                                                     <constraint firstAttribute="trailing" secondItem="4Ju-Ub-h27" secondAttribute="trailing" id="O7t-45-qTR"/>
                                                     <constraint firstAttribute="trailing" secondItem="VyM-nC-76h" secondAttribute="trailing" id="PSu-b5-5yW"/>
                                                     <constraint firstItem="4Ju-Ub-h27" firstAttribute="leading" secondItem="V9J-Ex-lZJ" secondAttribute="leading" id="V1z-3l-LLh"/>
@@ -125,16 +154,16 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QsE-1s-n46">
-                                                <rect key="frame" x="491" y="0.0" width="153.5" height="124.5"/>
+                                                <rect key="frame" x="490.66666666666669" y="0.0" width="153.66666666666669" height="91"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hole" translatesAutoresizingMaskIntoConstraints="NO" id="HOo-5T-afa">
-                                                        <rect key="frame" x="0.0" y="50" width="153.5" height="74.5"/>
+                                                        <rect key="frame" x="0.0" y="49.999999999999986" width="153.66666666666666" height="41"/>
                                                     </imageView>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mole" highlightedImage="Mole" translatesAutoresizingMaskIntoConstraints="NO" id="OOi-Sh-665">
-                                                        <rect key="frame" x="0.0" y="0.0" width="153.5" height="94.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="153.66666666666666" height="81"/>
                                                     </imageView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T6e-cX-wzo">
-                                                        <rect key="frame" x="0.0" y="0.0" width="153.5" height="124.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="153.66666666666666" height="91"/>
                                                         <connections>
                                                             <action selector="tapPit:" destination="SZV-WD-TEh" eventType="touchUpInside" id="WRN-qn-bKC"/>
                                                         </connections>
@@ -150,23 +179,23 @@
                                                     <constraint firstItem="HOo-5T-afa" firstAttribute="top" secondItem="QsE-1s-n46" secondAttribute="top" constant="50" id="ZIO-cK-aLC"/>
                                                     <constraint firstAttribute="trailing" secondItem="HOo-5T-afa" secondAttribute="trailing" id="dqF-OX-CRJ"/>
                                                     <constraint firstAttribute="trailing" secondItem="OOi-Sh-665" secondAttribute="trailing" id="gpS-QX-WgS"/>
-                                                    <constraint firstAttribute="bottom" secondItem="OOi-Sh-665" secondAttribute="bottom" constant="30" id="hsk-T6-ETB"/>
+                                                    <constraint firstAttribute="bottom" secondItem="OOi-Sh-665" secondAttribute="bottom" constant="10" id="hsk-T6-ETB"/>
                                                     <constraint firstItem="OOi-Sh-665" firstAttribute="leading" secondItem="QsE-1s-n46" secondAttribute="leading" id="lKJ-v9-iCa"/>
                                                     <constraint firstItem="OOi-Sh-665" firstAttribute="top" secondItem="QsE-1s-n46" secondAttribute="top" id="n0j-ag-jij"/>
                                                     <constraint firstItem="HOo-5T-afa" firstAttribute="leading" secondItem="QsE-1s-n46" secondAttribute="leading" id="uLK-yX-Dh5"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fST-gT-yVa">
-                                                <rect key="frame" x="654.5" y="0.0" width="153.5" height="124.5"/>
+                                                <rect key="frame" x="654.33333333333337" y="0.0" width="153.66666666666663" height="91"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hole" translatesAutoresizingMaskIntoConstraints="NO" id="6e1-If-WrS">
-                                                        <rect key="frame" x="0.0" y="50" width="153.5" height="74.5"/>
+                                                        <rect key="frame" x="0.0" y="49.999999999999986" width="153.66666666666666" height="41"/>
                                                     </imageView>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mole" highlightedImage="Mole" translatesAutoresizingMaskIntoConstraints="NO" id="vmb-Cj-A6C">
-                                                        <rect key="frame" x="0.0" y="0.0" width="153.5" height="94.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="153.66666666666666" height="81"/>
                                                     </imageView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dj9-Zf-Hiy">
-                                                        <rect key="frame" x="0.0" y="0.0" width="153.5" height="124.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="153.66666666666666" height="91"/>
                                                         <connections>
                                                             <action selector="tapPit:" destination="SZV-WD-TEh" eventType="touchUpInside" id="qBV-bv-6cX"/>
                                                         </connections>
@@ -175,7 +204,7 @@
                                                 <color key="backgroundColor" red="0.039196782329999999" green="0.64428837439999997" blue="0.054890037910000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstItem="6e1-If-WrS" firstAttribute="top" secondItem="fST-gT-yVa" secondAttribute="top" constant="50" id="4Au-oP-ZMF"/>
-                                                    <constraint firstAttribute="bottom" secondItem="vmb-Cj-A6C" secondAttribute="bottom" constant="30" id="684-gS-WBM"/>
+                                                    <constraint firstAttribute="bottom" secondItem="vmb-Cj-A6C" secondAttribute="bottom" constant="10" id="684-gS-WBM"/>
                                                     <constraint firstItem="vmb-Cj-A6C" firstAttribute="leading" secondItem="fST-gT-yVa" secondAttribute="leading" id="9mW-QZ-Yo4"/>
                                                     <constraint firstAttribute="bottom" secondItem="dj9-Zf-Hiy" secondAttribute="bottom" id="L5D-JG-RYa"/>
                                                     <constraint firstItem="6e1-If-WrS" firstAttribute="leading" secondItem="fST-gT-yVa" secondAttribute="leading" id="MXu-KR-Qif"/>
@@ -191,19 +220,19 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="r4O-HI-8Zy">
-                                        <rect key="frame" x="0.0" y="134.5" width="808" height="124"/>
+                                        <rect key="frame" x="0.0" y="201.66666666666666" width="808" height="90.666666666666657"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bhG-Tj-NnQ">
-                                                <rect key="frame" x="0.0" y="0.0" width="153.5" height="124"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="153.66666666666666" height="90.666666666666671"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hole" translatesAutoresizingMaskIntoConstraints="NO" id="LJm-PG-7Z4">
-                                                        <rect key="frame" x="0.0" y="50" width="153.5" height="74"/>
+                                                        <rect key="frame" x="0.0" y="50" width="153.66666666666666" height="40.666666666666657"/>
                                                     </imageView>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mole" highlightedImage="Mole" translatesAutoresizingMaskIntoConstraints="NO" id="KxG-4N-4zm">
-                                                        <rect key="frame" x="0.0" y="0.0" width="153.5" height="94"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="153.66666666666666" height="80.666666666666671"/>
                                                     </imageView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zxd-M3-i4J">
-                                                        <rect key="frame" x="0.0" y="0.0" width="153.5" height="124"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="153.66666666666666" height="90.666666666666671"/>
                                                         <connections>
                                                             <action selector="tapPit:" destination="SZV-WD-TEh" eventType="touchUpInside" id="1l8-wX-hPv"/>
                                                         </connections>
@@ -215,7 +244,7 @@
                                                     <constraint firstItem="Zxd-M3-i4J" firstAttribute="top" secondItem="bhG-Tj-NnQ" secondAttribute="top" id="52W-HD-zt4"/>
                                                     <constraint firstItem="KxG-4N-4zm" firstAttribute="top" secondItem="bhG-Tj-NnQ" secondAttribute="top" id="7tP-kb-Hit"/>
                                                     <constraint firstAttribute="bottom" secondItem="Zxd-M3-i4J" secondAttribute="bottom" id="B00-61-9m7"/>
-                                                    <constraint firstAttribute="bottom" secondItem="KxG-4N-4zm" secondAttribute="bottom" constant="30" id="CRS-00-kI3"/>
+                                                    <constraint firstAttribute="bottom" secondItem="KxG-4N-4zm" secondAttribute="bottom" constant="10" id="CRS-00-kI3"/>
                                                     <constraint firstItem="KxG-4N-4zm" firstAttribute="leading" secondItem="bhG-Tj-NnQ" secondAttribute="leading" id="JgL-aB-old"/>
                                                     <constraint firstItem="Zxd-M3-i4J" firstAttribute="leading" secondItem="bhG-Tj-NnQ" secondAttribute="leading" id="JqO-is-oQJ"/>
                                                     <constraint firstAttribute="trailing" secondItem="LJm-PG-7Z4" secondAttribute="trailing" id="Nr3-na-svj"/>
@@ -226,16 +255,16 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mp7-E5-ciz">
-                                                <rect key="frame" x="163.5" y="0.0" width="153.5" height="124"/>
+                                                <rect key="frame" x="163.66666666666669" y="0.0" width="153.66666666666669" height="90.666666666666671"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hole" translatesAutoresizingMaskIntoConstraints="NO" id="Sy9-X2-Sr4">
-                                                        <rect key="frame" x="0.0" y="50" width="153.5" height="74"/>
+                                                        <rect key="frame" x="0.0" y="50" width="153.66666666666666" height="40.666666666666657"/>
                                                     </imageView>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mole" highlightedImage="Mole" translatesAutoresizingMaskIntoConstraints="NO" id="GOa-kH-SBg">
-                                                        <rect key="frame" x="0.0" y="0.0" width="153.5" height="94"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="153.66666666666666" height="80.666666666666671"/>
                                                     </imageView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iIA-u7-1uP">
-                                                        <rect key="frame" x="0.0" y="0.0" width="153.5" height="124"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="153.66666666666666" height="90.666666666666671"/>
                                                         <connections>
                                                             <action selector="tapPit:" destination="SZV-WD-TEh" eventType="touchUpInside" id="SNG-hJ-cxp"/>
                                                         </connections>
@@ -252,22 +281,22 @@
                                                     <constraint firstItem="GOa-kH-SBg" firstAttribute="top" secondItem="Mp7-E5-ciz" secondAttribute="top" id="RAs-2X-Kbc"/>
                                                     <constraint firstItem="Sy9-X2-Sr4" firstAttribute="leading" secondItem="Mp7-E5-ciz" secondAttribute="leading" id="TLv-Iu-JJa"/>
                                                     <constraint firstAttribute="trailing" secondItem="Sy9-X2-Sr4" secondAttribute="trailing" id="XG6-k8-1nU"/>
-                                                    <constraint firstAttribute="bottom" secondItem="GOa-kH-SBg" secondAttribute="bottom" constant="30" id="Zeb-vg-hOW"/>
+                                                    <constraint firstAttribute="bottom" secondItem="GOa-kH-SBg" secondAttribute="bottom" constant="10" id="Zeb-vg-hOW"/>
                                                     <constraint firstItem="GOa-kH-SBg" firstAttribute="leading" secondItem="Mp7-E5-ciz" secondAttribute="leading" id="Zn0-ur-zzu"/>
                                                     <constraint firstItem="Sy9-X2-Sr4" firstAttribute="top" secondItem="Mp7-E5-ciz" secondAttribute="top" constant="50" id="uZd-Jp-vB4"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kG3-XH-jos">
-                                                <rect key="frame" x="327" y="0.0" width="154" height="124"/>
+                                                <rect key="frame" x="327.33333333333331" y="0.0" width="153.33333333333331" height="90.666666666666671"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hole" translatesAutoresizingMaskIntoConstraints="NO" id="pzJ-Qb-j2Z">
-                                                        <rect key="frame" x="0.0" y="50" width="154" height="74"/>
+                                                        <rect key="frame" x="0.0" y="50" width="153.33333333333334" height="40.666666666666657"/>
                                                     </imageView>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mole" highlightedImage="Mole" translatesAutoresizingMaskIntoConstraints="NO" id="DDL-Mt-31i">
-                                                        <rect key="frame" x="0.0" y="0.0" width="154" height="94"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="153.33333333333334" height="80.666666666666671"/>
                                                     </imageView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y1b-l2-EaP">
-                                                        <rect key="frame" x="0.0" y="0.0" width="154" height="124"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="153.33333333333334" height="90.666666666666671"/>
                                                         <connections>
                                                             <action selector="tapPit:" destination="SZV-WD-TEh" eventType="touchUpInside" id="OwO-np-kXU"/>
                                                         </connections>
@@ -276,7 +305,7 @@
                                                 <color key="backgroundColor" red="0.039196782329999999" green="0.64428837439999997" blue="0.054890037910000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstItem="pzJ-Qb-j2Z" firstAttribute="leading" secondItem="kG3-XH-jos" secondAttribute="leading" id="0c0-zD-SxT"/>
-                                                    <constraint firstAttribute="bottom" secondItem="DDL-Mt-31i" secondAttribute="bottom" constant="30" id="1Ic-hj-Lzg"/>
+                                                    <constraint firstAttribute="bottom" secondItem="DDL-Mt-31i" secondAttribute="bottom" constant="10" id="1Ic-hj-Lzg"/>
                                                     <constraint firstAttribute="trailing" secondItem="DDL-Mt-31i" secondAttribute="trailing" id="Jxn-OZ-9t6"/>
                                                     <constraint firstItem="DDL-Mt-31i" firstAttribute="top" secondItem="kG3-XH-jos" secondAttribute="top" id="dUJ-sB-o9C"/>
                                                     <constraint firstAttribute="bottom" secondItem="pzJ-Qb-j2Z" secondAttribute="bottom" id="gLZ-DW-9rE"/>
@@ -290,16 +319,16 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7X7-st-gtj">
-                                                <rect key="frame" x="491" y="0.0" width="153.5" height="124"/>
+                                                <rect key="frame" x="490.66666666666669" y="0.0" width="153.66666666666669" height="90.666666666666671"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hole" translatesAutoresizingMaskIntoConstraints="NO" id="UOF-u9-n2A">
-                                                        <rect key="frame" x="0.0" y="50" width="153.5" height="74"/>
+                                                        <rect key="frame" x="0.0" y="50" width="153.66666666666666" height="40.666666666666657"/>
                                                     </imageView>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mole" highlightedImage="Mole" translatesAutoresizingMaskIntoConstraints="NO" id="ihs-K7-Ws0">
-                                                        <rect key="frame" x="0.0" y="0.0" width="153.5" height="94"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="153.66666666666666" height="80.666666666666671"/>
                                                     </imageView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hey-3a-8HR">
-                                                        <rect key="frame" x="0.0" y="0.0" width="153.5" height="124"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="153.66666666666666" height="90.666666666666671"/>
                                                         <connections>
                                                             <action selector="tapPit:" destination="SZV-WD-TEh" eventType="touchUpInside" id="6fQ-Z3-tqn"/>
                                                         </connections>
@@ -310,7 +339,7 @@
                                                     <constraint firstItem="ihs-K7-Ws0" firstAttribute="leading" secondItem="7X7-st-gtj" secondAttribute="leading" id="1PF-wU-oLM"/>
                                                     <constraint firstAttribute="trailing" secondItem="hey-3a-8HR" secondAttribute="trailing" id="77t-kd-Y7i"/>
                                                     <constraint firstAttribute="bottom" secondItem="UOF-u9-n2A" secondAttribute="bottom" id="KFM-pE-f2q"/>
-                                                    <constraint firstAttribute="bottom" secondItem="ihs-K7-Ws0" secondAttribute="bottom" constant="30" id="LE2-In-AyP"/>
+                                                    <constraint firstAttribute="bottom" secondItem="ihs-K7-Ws0" secondAttribute="bottom" constant="10" id="LE2-In-AyP"/>
                                                     <constraint firstItem="hey-3a-8HR" firstAttribute="top" secondItem="7X7-st-gtj" secondAttribute="top" id="YFS-Cy-OkA"/>
                                                     <constraint firstAttribute="bottom" secondItem="hey-3a-8HR" secondAttribute="bottom" id="j6X-yw-FyG"/>
                                                     <constraint firstItem="hey-3a-8HR" firstAttribute="leading" secondItem="7X7-st-gtj" secondAttribute="leading" id="nhH-GL-Doc"/>
@@ -322,16 +351,16 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6EM-Fb-zuc">
-                                                <rect key="frame" x="654.5" y="0.0" width="153.5" height="124"/>
+                                                <rect key="frame" x="654.33333333333337" y="0.0" width="153.66666666666663" height="90.666666666666671"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hole" translatesAutoresizingMaskIntoConstraints="NO" id="AUh-bm-pFY">
-                                                        <rect key="frame" x="0.0" y="50" width="153.5" height="74"/>
+                                                        <rect key="frame" x="0.0" y="50" width="153.66666666666666" height="40.666666666666657"/>
                                                     </imageView>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mole" highlightedImage="Mole" translatesAutoresizingMaskIntoConstraints="NO" id="t4M-xr-wcO">
-                                                        <rect key="frame" x="0.0" y="0.0" width="153.5" height="94"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="153.66666666666666" height="80.666666666666671"/>
                                                     </imageView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qa2-gR-H30">
-                                                        <rect key="frame" x="0.0" y="0.0" width="153.5" height="124"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="153.66666666666666" height="90.666666666666671"/>
                                                         <connections>
                                                             <action selector="tapPit:" destination="SZV-WD-TEh" eventType="touchUpInside" id="4aD-jX-1KB"/>
                                                         </connections>
@@ -347,7 +376,7 @@
                                                     <constraint firstItem="t4M-xr-wcO" firstAttribute="top" secondItem="6EM-Fb-zuc" secondAttribute="top" id="PwQ-4f-Y9W"/>
                                                     <constraint firstItem="Qa2-gR-H30" firstAttribute="leading" secondItem="6EM-Fb-zuc" secondAttribute="leading" id="asj-8m-RQ9"/>
                                                     <constraint firstAttribute="trailing" secondItem="Qa2-gR-H30" secondAttribute="trailing" id="czi-o8-rJy"/>
-                                                    <constraint firstAttribute="bottom" secondItem="t4M-xr-wcO" secondAttribute="bottom" constant="30" id="gXT-0b-bVO"/>
+                                                    <constraint firstAttribute="bottom" secondItem="t4M-xr-wcO" secondAttribute="bottom" constant="10" id="gXT-0b-bVO"/>
                                                     <constraint firstItem="AUh-bm-pFY" firstAttribute="top" secondItem="6EM-Fb-zuc" secondAttribute="top" constant="50" id="wuc-4V-er2"/>
                                                     <constraint firstItem="t4M-xr-wcO" firstAttribute="leading" secondItem="6EM-Fb-zuc" secondAttribute="leading" id="yKP-tH-qod"/>
                                                     <constraint firstItem="AUh-bm-pFY" firstAttribute="leading" secondItem="6EM-Fb-zuc" secondAttribute="leading" id="z5N-Ez-87K"/>
@@ -356,19 +385,19 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="4ue-IA-o4b">
-                                        <rect key="frame" x="0.0" y="268.5" width="808" height="124.5"/>
+                                        <rect key="frame" x="0.0" y="302.33333333333331" width="808" height="90.666666666666686"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y5C-b0-iMF">
-                                                <rect key="frame" x="0.0" y="0.0" width="161.5" height="124.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="161.66666666666666" height="90.666666666666671"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hole" translatesAutoresizingMaskIntoConstraints="NO" id="ORI-xY-hqf">
-                                                        <rect key="frame" x="0.0" y="50" width="161.5" height="74.5"/>
+                                                        <rect key="frame" x="0.0" y="50" width="161.66666666666666" height="40.666666666666657"/>
                                                     </imageView>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mole" highlightedImage="Mole" translatesAutoresizingMaskIntoConstraints="NO" id="58I-Wp-xDH">
-                                                        <rect key="frame" x="0.0" y="0.0" width="161.5" height="94.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="161.66666666666666" height="80.666666666666671"/>
                                                     </imageView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NOO-PB-tvq">
-                                                        <rect key="frame" x="0.0" y="0.0" width="161.5" height="124.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="161.66666666666666" height="90.666666666666671"/>
                                                         <connections>
                                                             <action selector="tapPit:" destination="SZV-WD-TEh" eventType="touchUpInside" id="jRH-09-Rxq"/>
                                                         </connections>
@@ -383,7 +412,7 @@
                                                     <constraint firstItem="ORI-xY-hqf" firstAttribute="top" secondItem="y5C-b0-iMF" secondAttribute="top" constant="50" id="S9u-1J-z5d"/>
                                                     <constraint firstItem="58I-Wp-xDH" firstAttribute="leading" secondItem="y5C-b0-iMF" secondAttribute="leading" id="UTv-Xm-5b9"/>
                                                     <constraint firstAttribute="trailing" secondItem="ORI-xY-hqf" secondAttribute="trailing" id="YTc-SN-LWw"/>
-                                                    <constraint firstAttribute="bottom" secondItem="58I-Wp-xDH" secondAttribute="bottom" constant="30" id="cDh-4D-eJv"/>
+                                                    <constraint firstAttribute="bottom" secondItem="58I-Wp-xDH" secondAttribute="bottom" constant="10" id="cDh-4D-eJv"/>
                                                     <constraint firstAttribute="trailing" secondItem="NOO-PB-tvq" secondAttribute="trailing" id="dUF-6K-FUv"/>
                                                     <constraint firstAttribute="bottom" secondItem="NOO-PB-tvq" secondAttribute="bottom" id="gGJ-ha-U2B"/>
                                                     <constraint firstItem="ORI-xY-hqf" firstAttribute="leading" secondItem="y5C-b0-iMF" secondAttribute="leading" id="j1x-Qj-I1o"/>
@@ -391,16 +420,16 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1q1-GR-dAP">
-                                                <rect key="frame" x="161.5" y="0.0" width="161.5" height="124.5"/>
+                                                <rect key="frame" x="161.66666666666669" y="0.0" width="161.66666666666669" height="90.666666666666671"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hole" translatesAutoresizingMaskIntoConstraints="NO" id="1Cu-lW-qLt">
-                                                        <rect key="frame" x="0.0" y="50" width="161.5" height="74.5"/>
+                                                        <rect key="frame" x="0.0" y="50" width="161.66666666666666" height="40.666666666666657"/>
                                                     </imageView>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mole" highlightedImage="Mole" translatesAutoresizingMaskIntoConstraints="NO" id="xEX-k5-kwJ">
-                                                        <rect key="frame" x="0.0" y="0.0" width="161.5" height="94.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="161.66666666666666" height="80.666666666666671"/>
                                                     </imageView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y7C-OV-rsp">
-                                                        <rect key="frame" x="0.0" y="0.0" width="161.5" height="124.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="161.66666666666666" height="90.666666666666671"/>
                                                         <connections>
                                                             <action selector="tapPit:" destination="SZV-WD-TEh" eventType="touchUpInside" id="o0u-yL-f4y"/>
                                                         </connections>
@@ -412,7 +441,7 @@
                                                     <constraint firstItem="xEX-k5-kwJ" firstAttribute="leading" secondItem="1q1-GR-dAP" secondAttribute="leading" id="ARV-c5-Zeu"/>
                                                     <constraint firstItem="1Cu-lW-qLt" firstAttribute="leading" secondItem="1q1-GR-dAP" secondAttribute="leading" id="C2U-MD-8kF"/>
                                                     <constraint firstAttribute="bottom" secondItem="1Cu-lW-qLt" secondAttribute="bottom" id="Cyw-tC-ZOy"/>
-                                                    <constraint firstAttribute="bottom" secondItem="xEX-k5-kwJ" secondAttribute="bottom" constant="30" id="DyT-wL-0VC"/>
+                                                    <constraint firstAttribute="bottom" secondItem="xEX-k5-kwJ" secondAttribute="bottom" constant="10" id="DyT-wL-0VC"/>
                                                     <constraint firstItem="1Cu-lW-qLt" firstAttribute="top" secondItem="1q1-GR-dAP" secondAttribute="top" constant="50" id="Ica-ob-6ga"/>
                                                     <constraint firstAttribute="bottom" secondItem="Y7C-OV-rsp" secondAttribute="bottom" id="POx-Wh-YAx"/>
                                                     <constraint firstAttribute="trailing" secondItem="1Cu-lW-qLt" secondAttribute="trailing" id="QXP-LM-BR7"/>
@@ -423,16 +452,16 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gza-zi-QuP">
-                                                <rect key="frame" x="323" y="0.0" width="162" height="124.5"/>
+                                                <rect key="frame" x="323.33333333333331" y="0.0" width="161.33333333333331" height="90.666666666666671"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hole" translatesAutoresizingMaskIntoConstraints="NO" id="cCD-Qc-xq7">
-                                                        <rect key="frame" x="0.0" y="50" width="162" height="74.5"/>
+                                                        <rect key="frame" x="0.0" y="50" width="161.33333333333334" height="40.666666666666657"/>
                                                     </imageView>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mole" highlightedImage="Mole" translatesAutoresizingMaskIntoConstraints="NO" id="cyc-pw-U6v">
-                                                        <rect key="frame" x="0.0" y="0.0" width="162" height="94.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="161.33333333333334" height="80.666666666666671"/>
                                                     </imageView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pYC-Vd-Ok1">
-                                                        <rect key="frame" x="0.0" y="0.0" width="162" height="124.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="161.33333333333334" height="90.666666666666671"/>
                                                         <connections>
                                                             <action selector="tapPit:" destination="SZV-WD-TEh" eventType="touchUpInside" id="Boa-tr-KWe"/>
                                                         </connections>
@@ -447,7 +476,7 @@
                                                     <constraint firstItem="cyc-pw-U6v" firstAttribute="top" secondItem="Gza-zi-QuP" secondAttribute="top" id="bR0-hW-ubC"/>
                                                     <constraint firstAttribute="bottom" secondItem="cCD-Qc-xq7" secondAttribute="bottom" id="dY6-lu-POZ"/>
                                                     <constraint firstItem="pYC-Vd-Ok1" firstAttribute="leading" secondItem="Gza-zi-QuP" secondAttribute="leading" id="iBB-kW-hW5"/>
-                                                    <constraint firstAttribute="bottom" secondItem="cyc-pw-U6v" secondAttribute="bottom" constant="30" id="nQc-BN-Pjz"/>
+                                                    <constraint firstAttribute="bottom" secondItem="cyc-pw-U6v" secondAttribute="bottom" constant="10" id="nQc-BN-Pjz"/>
                                                     <constraint firstItem="cCD-Qc-xq7" firstAttribute="leading" secondItem="Gza-zi-QuP" secondAttribute="leading" id="oMy-9a-8lb"/>
                                                     <constraint firstAttribute="trailing" secondItem="pYC-Vd-Ok1" secondAttribute="trailing" id="sdh-9u-saT"/>
                                                     <constraint firstItem="pYC-Vd-Ok1" firstAttribute="top" secondItem="Gza-zi-QuP" secondAttribute="top" id="yP1-G6-lfb"/>
@@ -455,16 +484,16 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B0s-G9-aIA">
-                                                <rect key="frame" x="485" y="0.0" width="161.5" height="124.5"/>
+                                                <rect key="frame" x="484.66666666666669" y="0.0" width="161.66666666666669" height="90.666666666666671"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hole" translatesAutoresizingMaskIntoConstraints="NO" id="M1d-2u-Bta">
-                                                        <rect key="frame" x="0.0" y="50" width="161.5" height="74.5"/>
+                                                        <rect key="frame" x="0.0" y="50" width="161.66666666666666" height="40.666666666666657"/>
                                                     </imageView>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mole" highlightedImage="Mole" translatesAutoresizingMaskIntoConstraints="NO" id="EcB-Gc-fMZ">
-                                                        <rect key="frame" x="0.0" y="0.0" width="161.5" height="94.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="161.66666666666666" height="80.666666666666671"/>
                                                     </imageView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RRI-AE-BJz">
-                                                        <rect key="frame" x="0.0" y="0.0" width="161.5" height="124.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="161.66666666666666" height="90.666666666666671"/>
                                                         <connections>
                                                             <action selector="tapPit:" destination="SZV-WD-TEh" eventType="touchUpInside" id="lb5-Qv-XBb"/>
                                                         </connections>
@@ -481,22 +510,22 @@
                                                     <constraint firstItem="RRI-AE-BJz" firstAttribute="leading" secondItem="B0s-G9-aIA" secondAttribute="leading" id="ih6-Xu-6WU"/>
                                                     <constraint firstItem="EcB-Gc-fMZ" firstAttribute="leading" secondItem="B0s-G9-aIA" secondAttribute="leading" id="jwf-nf-Mhg"/>
                                                     <constraint firstAttribute="bottom" secondItem="M1d-2u-Bta" secondAttribute="bottom" id="mFr-MM-S64"/>
-                                                    <constraint firstAttribute="bottom" secondItem="EcB-Gc-fMZ" secondAttribute="bottom" constant="30" id="pL3-TZ-N4o"/>
+                                                    <constraint firstAttribute="bottom" secondItem="EcB-Gc-fMZ" secondAttribute="bottom" constant="10" id="pL3-TZ-N4o"/>
                                                     <constraint firstAttribute="trailing" secondItem="M1d-2u-Bta" secondAttribute="trailing" id="yMU-ay-xQ0"/>
                                                     <constraint firstItem="RRI-AE-BJz" firstAttribute="top" secondItem="B0s-G9-aIA" secondAttribute="top" id="zRS-VT-3vY"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2tB-D1-8mn">
-                                                <rect key="frame" x="646.5" y="0.0" width="161.5" height="124.5"/>
+                                                <rect key="frame" x="646.33333333333337" y="0.0" width="161.66666666666663" height="90.666666666666671"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hole" translatesAutoresizingMaskIntoConstraints="NO" id="2qJ-2T-jso">
-                                                        <rect key="frame" x="0.0" y="50" width="161.5" height="74.5"/>
+                                                        <rect key="frame" x="0.0" y="50" width="161.66666666666666" height="40.666666666666657"/>
                                                     </imageView>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mole" highlightedImage="Mole" translatesAutoresizingMaskIntoConstraints="NO" id="Iyi-DQ-af5">
-                                                        <rect key="frame" x="0.0" y="0.0" width="161.5" height="94.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="161.66666666666666" height="80.666666666666671"/>
                                                     </imageView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LIR-oP-f4m">
-                                                        <rect key="frame" x="0.0" y="0.0" width="161.5" height="124.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="161.66666666666666" height="90.666666666666671"/>
                                                         <connections>
                                                             <action selector="tapPit:" destination="SZV-WD-TEh" eventType="touchUpInside" id="dre-2M-emn"/>
                                                         </connections>
@@ -515,7 +544,7 @@
                                                     <constraint firstItem="LIR-oP-f4m" firstAttribute="leading" secondItem="2tB-D1-8mn" secondAttribute="leading" id="aCa-gw-8ql"/>
                                                     <constraint firstItem="LIR-oP-f4m" firstAttribute="top" secondItem="2tB-D1-8mn" secondAttribute="top" id="cFI-bH-Nia"/>
                                                     <constraint firstAttribute="trailing" secondItem="Iyi-DQ-af5" secondAttribute="trailing" id="hLE-eP-5fC"/>
-                                                    <constraint firstAttribute="bottom" secondItem="Iyi-DQ-af5" secondAttribute="bottom" constant="30" id="kPg-MH-C3r"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Iyi-DQ-af5" secondAttribute="bottom" constant="10" id="kPg-MH-C3r"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
