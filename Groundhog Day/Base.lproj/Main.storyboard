@@ -25,11 +25,20 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="U5o-oC-KYZ">
                                 <rect key="frame" x="44" y="0.0" width="808" height="393"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="847-rh-lkd">
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="847-rh-lkd">
                                         <rect key="frame" x="0.0" y="0.0" width="808" height="90.666666666666671"/>
                                         <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RCc-mq-mH8">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="90.666666666666671"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="veT-iz-bHJ"/>
+                                                </constraints>
+                                                <state key="normal">
+                                                    <attributedString key="attributedTitle"/>
+                                                </state>
+                                            </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="20L-74-0Mx">
-                                                <rect key="frame" x="0.0" y="0.0" width="404" height="90.666666666666671"/>
+                                                <rect key="frame" x="100" y="0.0" width="354" height="90.666666666666671"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="Timer">
                                                         <attributes>
@@ -41,7 +50,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SZc-7P-r9l">
-                                                <rect key="frame" x="404" y="0.0" width="404" height="90.666666666666671"/>
+                                                <rect key="frame" x="454" y="0.0" width="354" height="90.666666666666671"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="Score">
                                                         <attributes>
@@ -53,6 +62,9 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstItem="SZc-7P-r9l" firstAttribute="width" secondItem="20L-74-0Mx" secondAttribute="width" id="qXL-h4-BDH"/>
+                                        </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Qpy-eb-79b">
                                         <rect key="frame" x="0.0" y="100.66666666666669" width="808" height="91"/>
@@ -69,7 +81,7 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a32-DE-8RX">
                                                         <rect key="frame" x="0.0" y="0.0" width="153.66666666666666" height="91"/>
                                                         <connections>
-                                                            <action selector="tapPit:" destination="SZV-WD-TEh" eventType="touchUpInside" id="B7R-u7-G9J"/>
+                                                            <action selector="Hit:" destination="BV1-FR-VrT" eventType="touchUpInside" id="8Hm-Kp-1zS"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -98,10 +110,10 @@
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mole" highlightedImage="Mole" translatesAutoresizingMaskIntoConstraints="NO" id="ixB-cO-6Q8">
                                                         <rect key="frame" x="0.0" y="0.0" width="153.66666666666666" height="81"/>
                                                     </imageView>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C5y-OQ-Dln">
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C5y-OQ-Dln">
                                                         <rect key="frame" x="0.0" y="0.0" width="153.66666666666666" height="91"/>
                                                         <connections>
-                                                            <action selector="tapPit:" destination="SZV-WD-TEh" eventType="touchUpInside" id="cJe-MT-Goh"/>
+                                                            <action selector="Hit:" destination="BV1-FR-VrT" eventType="touchUpInside" id="N0F-wV-gUA"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -130,10 +142,10 @@
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mole" highlightedImage="Mole" translatesAutoresizingMaskIntoConstraints="NO" id="4Ju-Ub-h27">
                                                         <rect key="frame" x="0.0" y="0.0" width="153.33333333333334" height="81"/>
                                                     </imageView>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BZA-Ni-5Ov">
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BZA-Ni-5Ov">
                                                         <rect key="frame" x="0.0" y="0.0" width="153.33333333333334" height="91"/>
                                                         <connections>
-                                                            <action selector="tapPit:" destination="SZV-WD-TEh" eventType="touchUpInside" id="1nn-b0-1qN"/>
+                                                            <action selector="Hit:" destination="BV1-FR-VrT" eventType="touchUpInside" id="xR8-fF-xih"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -162,10 +174,10 @@
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mole" highlightedImage="Mole" translatesAutoresizingMaskIntoConstraints="NO" id="OOi-Sh-665">
                                                         <rect key="frame" x="0.0" y="0.0" width="153.66666666666666" height="81"/>
                                                     </imageView>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T6e-cX-wzo">
+                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T6e-cX-wzo">
                                                         <rect key="frame" x="0.0" y="0.0" width="153.66666666666666" height="91"/>
                                                         <connections>
-                                                            <action selector="tapPit:" destination="SZV-WD-TEh" eventType="touchUpInside" id="WRN-qn-bKC"/>
+                                                            <action selector="Hit:" destination="BV1-FR-VrT" eventType="touchUpInside" id="Bsh-lW-vSW"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -194,10 +206,10 @@
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mole" highlightedImage="Mole" translatesAutoresizingMaskIntoConstraints="NO" id="vmb-Cj-A6C">
                                                         <rect key="frame" x="0.0" y="0.0" width="153.66666666666666" height="81"/>
                                                     </imageView>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dj9-Zf-Hiy">
+                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dj9-Zf-Hiy">
                                                         <rect key="frame" x="0.0" y="0.0" width="153.66666666666666" height="91"/>
                                                         <connections>
-                                                            <action selector="tapPit:" destination="SZV-WD-TEh" eventType="touchUpInside" id="qBV-bv-6cX"/>
+                                                            <action selector="Hit:" destination="BV1-FR-VrT" eventType="touchUpInside" id="NUP-Uo-x8Q"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -231,10 +243,10 @@
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mole" highlightedImage="Mole" translatesAutoresizingMaskIntoConstraints="NO" id="KxG-4N-4zm">
                                                         <rect key="frame" x="0.0" y="0.0" width="153.66666666666666" height="80.666666666666671"/>
                                                     </imageView>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zxd-M3-i4J">
+                                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zxd-M3-i4J">
                                                         <rect key="frame" x="0.0" y="0.0" width="153.66666666666666" height="90.666666666666671"/>
                                                         <connections>
-                                                            <action selector="tapPit:" destination="SZV-WD-TEh" eventType="touchUpInside" id="1l8-wX-hPv"/>
+                                                            <action selector="Hit:" destination="BV1-FR-VrT" eventType="touchUpInside" id="Iub-oR-pTR"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -263,10 +275,10 @@
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mole" highlightedImage="Mole" translatesAutoresizingMaskIntoConstraints="NO" id="GOa-kH-SBg">
                                                         <rect key="frame" x="0.0" y="0.0" width="153.66666666666666" height="80.666666666666671"/>
                                                     </imageView>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iIA-u7-1uP">
+                                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iIA-u7-1uP">
                                                         <rect key="frame" x="0.0" y="0.0" width="153.66666666666666" height="90.666666666666671"/>
                                                         <connections>
-                                                            <action selector="tapPit:" destination="SZV-WD-TEh" eventType="touchUpInside" id="SNG-hJ-cxp"/>
+                                                            <action selector="Hit:" destination="BV1-FR-VrT" eventType="touchUpInside" id="gMy-n7-EjO"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -295,10 +307,10 @@
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mole" highlightedImage="Mole" translatesAutoresizingMaskIntoConstraints="NO" id="DDL-Mt-31i">
                                                         <rect key="frame" x="0.0" y="0.0" width="153.33333333333334" height="80.666666666666671"/>
                                                     </imageView>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y1b-l2-EaP">
+                                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y1b-l2-EaP">
                                                         <rect key="frame" x="0.0" y="0.0" width="153.33333333333334" height="90.666666666666671"/>
                                                         <connections>
-                                                            <action selector="tapPit:" destination="SZV-WD-TEh" eventType="touchUpInside" id="OwO-np-kXU"/>
+                                                            <action selector="Hit:" destination="BV1-FR-VrT" eventType="touchUpInside" id="6Rb-wL-jZy"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -327,10 +339,10 @@
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mole" highlightedImage="Mole" translatesAutoresizingMaskIntoConstraints="NO" id="ihs-K7-Ws0">
                                                         <rect key="frame" x="0.0" y="0.0" width="153.66666666666666" height="80.666666666666671"/>
                                                     </imageView>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hey-3a-8HR">
+                                                    <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hey-3a-8HR">
                                                         <rect key="frame" x="0.0" y="0.0" width="153.66666666666666" height="90.666666666666671"/>
                                                         <connections>
-                                                            <action selector="tapPit:" destination="SZV-WD-TEh" eventType="touchUpInside" id="6fQ-Z3-tqn"/>
+                                                            <action selector="Hit:" destination="BV1-FR-VrT" eventType="touchUpInside" id="uIf-pW-OIO"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -359,10 +371,10 @@
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mole" highlightedImage="Mole" translatesAutoresizingMaskIntoConstraints="NO" id="t4M-xr-wcO">
                                                         <rect key="frame" x="0.0" y="0.0" width="153.66666666666666" height="80.666666666666671"/>
                                                     </imageView>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qa2-gR-H30">
+                                                    <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qa2-gR-H30">
                                                         <rect key="frame" x="0.0" y="0.0" width="153.66666666666666" height="90.666666666666671"/>
                                                         <connections>
-                                                            <action selector="tapPit:" destination="SZV-WD-TEh" eventType="touchUpInside" id="4aD-jX-1KB"/>
+                                                            <action selector="Hit:" destination="BV1-FR-VrT" eventType="touchUpInside" id="f5a-zk-zLC"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -396,10 +408,10 @@
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mole" highlightedImage="Mole" translatesAutoresizingMaskIntoConstraints="NO" id="58I-Wp-xDH">
                                                         <rect key="frame" x="0.0" y="0.0" width="161.66666666666666" height="80.666666666666671"/>
                                                     </imageView>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NOO-PB-tvq">
+                                                    <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NOO-PB-tvq">
                                                         <rect key="frame" x="0.0" y="0.0" width="161.66666666666666" height="90.666666666666671"/>
                                                         <connections>
-                                                            <action selector="tapPit:" destination="SZV-WD-TEh" eventType="touchUpInside" id="jRH-09-Rxq"/>
+                                                            <action selector="Hit:" destination="BV1-FR-VrT" eventType="touchUpInside" id="Yep-Vu-vRE"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -428,10 +440,10 @@
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mole" highlightedImage="Mole" translatesAutoresizingMaskIntoConstraints="NO" id="xEX-k5-kwJ">
                                                         <rect key="frame" x="0.0" y="0.0" width="161.66666666666666" height="80.666666666666671"/>
                                                     </imageView>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y7C-OV-rsp">
+                                                    <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y7C-OV-rsp">
                                                         <rect key="frame" x="0.0" y="0.0" width="161.66666666666666" height="90.666666666666671"/>
                                                         <connections>
-                                                            <action selector="tapPit:" destination="SZV-WD-TEh" eventType="touchUpInside" id="o0u-yL-f4y"/>
+                                                            <action selector="Hit:" destination="BV1-FR-VrT" eventType="touchUpInside" id="Jzz-v2-EeF"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -460,10 +472,10 @@
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mole" highlightedImage="Mole" translatesAutoresizingMaskIntoConstraints="NO" id="cyc-pw-U6v">
                                                         <rect key="frame" x="0.0" y="0.0" width="161.33333333333334" height="80.666666666666671"/>
                                                     </imageView>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pYC-Vd-Ok1">
+                                                    <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pYC-Vd-Ok1">
                                                         <rect key="frame" x="0.0" y="0.0" width="161.33333333333334" height="90.666666666666671"/>
                                                         <connections>
-                                                            <action selector="tapPit:" destination="SZV-WD-TEh" eventType="touchUpInside" id="Boa-tr-KWe"/>
+                                                            <action selector="Hit:" destination="BV1-FR-VrT" eventType="touchUpInside" id="2tR-z1-fhm"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -492,10 +504,10 @@
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mole" highlightedImage="Mole" translatesAutoresizingMaskIntoConstraints="NO" id="EcB-Gc-fMZ">
                                                         <rect key="frame" x="0.0" y="0.0" width="161.66666666666666" height="80.666666666666671"/>
                                                     </imageView>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RRI-AE-BJz">
+                                                    <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RRI-AE-BJz">
                                                         <rect key="frame" x="0.0" y="0.0" width="161.66666666666666" height="90.666666666666671"/>
                                                         <connections>
-                                                            <action selector="tapPit:" destination="SZV-WD-TEh" eventType="touchUpInside" id="lb5-Qv-XBb"/>
+                                                            <action selector="Hit:" destination="BV1-FR-VrT" eventType="touchUpInside" id="0iU-aI-A50"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -524,10 +536,10 @@
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mole" highlightedImage="Mole" translatesAutoresizingMaskIntoConstraints="NO" id="Iyi-DQ-af5">
                                                         <rect key="frame" x="0.0" y="0.0" width="161.66666666666666" height="80.666666666666671"/>
                                                     </imageView>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LIR-oP-f4m">
+                                                    <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LIR-oP-f4m">
                                                         <rect key="frame" x="0.0" y="0.0" width="161.66666666666666" height="90.666666666666671"/>
                                                         <connections>
-                                                            <action selector="tapPit:" destination="SZV-WD-TEh" eventType="touchUpInside" id="dre-2M-emn"/>
+                                                            <action selector="Hit:" destination="BV1-FR-VrT" eventType="touchUpInside" id="NT1-Ot-fhC"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -569,6 +581,7 @@
                     </view>
                     <connections>
                         <outlet property="mainView" destination="3se-qz-xqx" id="xtk-C1-XM1"/>
+                        <outlet property="scoreLabel" destination="SZc-7P-r9l" id="vs5-9l-3xQ"/>
                         <outlet property="timerLabel" destination="20L-74-0Mx" id="unJ-bh-96L"/>
                         <outletCollection property="buttonArray" destination="a32-DE-8RX" collectionClass="NSMutableArray" id="7P8-Hn-Vl4"/>
                         <outletCollection property="buttonArray" destination="C5y-OQ-Dln" collectionClass="NSMutableArray" id="IVV-tC-9K7"/>

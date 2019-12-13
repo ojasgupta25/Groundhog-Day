@@ -17,6 +17,7 @@
 		37A361912396C12400D50664 /* Groundhog_DayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A361902396C12400D50664 /* Groundhog_DayTests.swift */; };
 		37A3619C2396C12400D50664 /* Groundhog_DayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A3619B2396C12400D50664 /* Groundhog_DayUITests.swift */; };
 		37AEFAA123A14C910058EE5C /* HammerScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AEFAA023A14C910058EE5C /* HammerScene.swift */; };
+		ADEE395723A3E1C4002A7574 /* GroundhogDay.atlas in Resources */ = {isa = PBXBuildFile; fileRef = ADEE395623A3E1C4002A7574 /* GroundhogDay.atlas */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		37A3619B2396C12400D50664 /* Groundhog_DayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Groundhog_DayUITests.swift; sourceTree = "<group>"; };
 		37A3619D2396C12400D50664 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37AEFAA023A14C910058EE5C /* HammerScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HammerScene.swift; sourceTree = "<group>"; };
+		ADEE395623A3E1C4002A7574 /* GroundhogDay.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = GroundhogDay.atlas; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		37A361742396C12200D50664 /* Groundhog Day */ = {
 			isa = PBXGroup;
 			children = (
+				ADEE395623A3E1C4002A7574 /* GroundhogDay.atlas */,
 				37A361752396C12200D50664 /* AppDelegate.swift */,
 				37A361792396C12200D50664 /* Actions.sks */,
 				37A3617B2396C12200D50664 /* GameScene.swift */,
@@ -240,6 +243,7 @@
 			files = (
 				37A361812396C12200D50664 /* Main.storyboard in Resources */,
 				37A361832396C12400D50664 /* Assets.xcassets in Resources */,
+				ADEE395723A3E1C4002A7574 /* GroundhogDay.atlas in Resources */,
 				37A361862396C12400D50664 /* LaunchScreen.storyboard in Resources */,
 				37A3617A2396C12200D50664 /* Actions.sks in Resources */,
 			);

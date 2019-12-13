@@ -10,16 +10,17 @@ import UIKit
 import SpriteKit
 import GameplayKit
 
-class HammerScene: SKScene {
-    
-    
+class HammerScene: SKScene
+{
     var hammerFrames:[SKTexture]?
     
-    required init?(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder)
+    {
         super.init(coder: aDecoder)
     }
     
-    override init(size: CGSize) {
+    override init(size: CGSize)
+    {
         super.init(size: size)
         self.backgroundColor = UIColor(white: 1, alpha: 0.1)
         
@@ -27,18 +28,18 @@ class HammerScene: SKScene {
         
         let hammerAtlas = SKTextureAtlas(named: "GroundhogDay")
         
-        for index in 1...8{
-            
+        for index in 1...8
+        {
             let Name = "Hammer\(index).png"
             let texture = hammerAtlas.textureNamed(Name)
             frames.append(texture)
         }
         
         self.hammerFrames = frames
-        
     }
     
-    func runHit(x: CGFloat, y: CGFloat){
+    func runHit(x: CGFloat, y: CGFloat)
+    {
         let texture = self.hammerFrames![0]
         let hammer = SKSpriteNode(texture: texture)
         
@@ -50,7 +51,8 @@ class HammerScene: SKScene {
         
         let moveAction = SKAction.moveBy(x: 0, y: 0, duration: 0.8)
         
-        let removeAction =  SKAction.run{
+        let removeAction =  SKAction.run
+        {
             hammer.removeAllActions()
             hammer.removeFromParent()
         }
@@ -58,9 +60,5 @@ class HammerScene: SKScene {
         let allActions = SKAction.sequence([moveAction, removeAction])
         
         hammer.run(allActions)
-        
-        
     }
-    
-    
 }
