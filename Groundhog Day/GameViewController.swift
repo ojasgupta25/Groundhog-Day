@@ -15,14 +15,18 @@ import UserNotifications
 class GameViewController: UIViewController
 {
     @IBOutlet var mainView: SKView!
+    @IBOutlet var viewArray: [UIView]! //Literally worthless, find a way to remove it without destroying all the other outlet collections
     @IBOutlet var buttonArray: [UIButton]!
-    @IBOutlet var viewArray: [UIView]!
     @IBOutlet var moleImageArray: [UIImageView]!
     
-    @IBOutlet var timerLabel: UILabel!
     @IBOutlet var scoreLabel: UILabel!
+    @IBOutlet var timerLabel: UILabel!
+    @IBOutlet var pauseView: UIView!
+    @IBOutlet var pauseButton: UIButton!
     
-    var scene: HammerScene?
+    @IBOutlet var gameScreen: UIStackView!
+    @IBOutlet var finalScore: UILabel!
+    @IBOutlet var replayButton: UIButton!
     
     var moleArray: [Pit] = []
     
@@ -33,6 +37,8 @@ class GameViewController: UIViewController
     var score = Int()
     var combo = Int()
     var multiplier = Int()
+    var pause = Bool()
+    var redText = Double()
     
     override func viewDidLoad()
     {
@@ -50,69 +56,123 @@ class GameViewController: UIViewController
         
         _ = Timer.scheduledTimer(timeInterval: difficulty/numberOfMoles, target: self, selector: #selector(addMole), userInfo: nil, repeats: true)
         
+        _ = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(setTextToRed), userInfo: nil, repeats: true)
+        
+        initialize()
+        
         //Turn phone into landscape
         //let value = UIInterfaceOrientation.landscapeRight.rawValue
         //UIDevice.current.setValue(value, forKey: "orientation")
     }
     
-    override func viewDidAppear(_ animated: Bool)
+    func initialize()
     {
-        super.viewDidAppear(animated)
+        seconds = 60
         
-        self.scene = HammerScene(size: CGSize(width: self.mainView.frame.size.width, height: self.mainView.frame.size.height))
-        self.mainView.presentScene(scene)
+        score = Int()
+        combo = Int()
+        multiplier = Int()
+        pause = Bool()
+        redText = Double()
+        
+        pauseView.isUserInteractionEnabled = false
+        
+        scoreLabel.text = "Score: 0 Pts"
+        timerLabel.text = "60s"
+        finalScore.isHidden = true
+        replayButton.isHidden = true
+        
+        gameScreen.isUserInteractionEnabled = true
+        gameScreen.isHidden = false
+        pauseView.isUserInteractionEnabled = true
+        pauseView.isHidden = false
+        pauseButton.isUserInteractionEnabled = true
+        pauseButton.isHidden = false
+        
+        for (index, mole) in moleImageArray.enumerated()
+        {
+            mole.isHidden = true
+            moleArray.append(Pit.init(index, difficulty))
+        }
     }
     
-    @IBAction func Hit(_ sender: UIButton)
+    @IBAction func pause(_ sender: UIButton)
     {
-        if let scene = self.scene
-        {
-            scene.runHit(x: (buttonArray[8].bounds.maxX + buttonArray[0].bounds.minX)/2 , y: (buttonArray[8].bounds.maxY + buttonArray[0].bounds.minY)/2)
-        }
+        pause = !pause
+        //switch pause button image here
         
-        if !moleArray[sender.tag].hasHog
+        if pause
         {
-            penalize(5)
-            combo = 0
-            multiplier = 0
+            pauseView.alpha = 0.3
         }
         
         else
         {
-            //remove mole here
-            
-            combo += 1
-            
-            if combo % 3 == 0
+            pauseView.alpha = 0
+        }
+    }
+    
+    @IBAction func hit(_ sender: UIButton)
+    {
+        if !pause
+        {
+            if !moleArray[sender.tag].hasHog
             {
-                multiplier = 5 * (combo / 3)
+                penalize(5)
+                combo = 0
+                multiplier = 0
+                redText = 0.5
             }
             
-            score += 20 + multiplier
-            scoreLabel.text = "\(score) Pts"
+            else
+            {
+                moleArray[sender.tag].hasHog = false
+                checkMoles()
+                
+                combo += 1
+                
+                if combo % 3 == 0
+                {
+                    multiplier = 5 * (combo / 3)
+                }
+                
+                score += 20 + multiplier
+                scoreLabel.text = "Score: \(score) Pts"
+            }
         }
     }
     
     func checkMoles()
     {
-        for (index, mole) in moleArray.enumerated()
+        if !pause
         {
-            if mole.hasHog
+            for (index, mole) in moleArray.enumerated()
             {
-                moleImageArray[index].isHidden = false
-            }
-            
-            else
-            {
-                moleImageArray[index].isHidden = true
+                if mole.hasHog
+                {
+                    moleImageArray[index].isHidden = false
+                }
+                
+                else
+                {
+                    moleImageArray[index].isHidden = true
+                }
             }
         }
     }
     
     func penalize(_ penalty: Int)
     {
-        seconds -= penalty //Five second penalty for a wrong hit
-        timerLabel.text = "Time Left: \(seconds)s"
+        if !pause
+        {
+            seconds -= penalty //Five second penalty for a wrong hit
+            timerLabel.text = "\(seconds)s"
+        }
+        
+        if seconds <= 0
+        {
+            countDown()
+        }
     }
     
     class Pit //Info on pits
@@ -127,44 +187,70 @@ class GameViewController: UIViewController
         }
     }
     
+    @objc func setTextToRed()
+    {
+        if redText > 0
+        {
+            timerLabel.textColor = .red
+            redText -= 0.1
+        }
+        
+        else
+        {
+            timerLabel.textColor = .black
+        }
+    }
+    
     @objc func checkTimeRemaining()
     {
-        var failSafe = Int() //How many moles are on the screen
-        var leastIndex = Int() //Mole with the lowest time left
-        var leastLife: Double = 1/difficulty //Index of the mole with the lowest time left
+        var failSafe: Int
+        var leastIndex: Int
+        var leastLife: Double
         
-        for (index, mole) in moleArray.enumerated()
+        repeat
         {
-            if mole.hasHog
+            failSafe = Int() //How many moles are on the screen
+            leastIndex = Int() //Mole with the lowest time left
+            leastLife = 1/difficulty //Index of the mole with the lowest time left
+            
+            for (index, mole) in moleArray.enumerated()
             {
-                failSafe += 1
-                
-                if mole.timeRemaining <= leastLife
+                if mole.hasHog
                 {
-                    leastLife = mole.timeRemaining
-                    leastIndex = index
+                    failSafe += 1
+                    
+                    if mole.timeRemaining <= leastLife
+                    {
+                        leastLife = mole.timeRemaining
+                        leastIndex = index
+                    }
                 }
             }
-        }
-        
-        if failSafe > Int(numberOfMoles)
-        {
-            moleArray[leastIndex].hasHog = false
-            moleArray[leastIndex].timeRemaining = 1/difficulty
-            checkMoles()
-        }
-        
-        for mole in moleArray
-        {
-            if mole.hasHog
+            
+            if failSafe > Int(numberOfMoles)
             {
-                mole.timeRemaining -= difficulty/numberOfMoles/10.0
-                
-                if mole.timeRemaining <= 0
+                moleArray[leastIndex].hasHog = false
+                moleArray[leastIndex].timeRemaining = 1/difficulty
+                checkMoles()
+            }
+        } while failSafe > Int(numberOfMoles)
+        
+        if !pause
+        {
+            for mole in moleArray
+            {
+                if mole.hasHog
                 {
-                    mole.hasHog = false
-                    mole.timeRemaining = 1/difficulty
-                    checkMoles()
+                    mole.timeRemaining -= difficulty/numberOfMoles/10.0
+                    
+                    if mole.timeRemaining <= 0
+                    {
+                        mole.hasHog = false
+                        mole.timeRemaining = 1/difficulty
+                        combo = 0
+                        multiplier = 0
+                        checkMoles()
+                    }
                 }
             }
         }
@@ -172,24 +258,45 @@ class GameViewController: UIViewController
     
     @objc func countDown()
     {
-        seconds -= 1
-        timerLabel.text = "\(seconds)s"
+        if seconds <= 0
+        {
+            gameScreen.isUserInteractionEnabled = false
+            gameScreen.isHidden = true
+            pauseView.isUserInteractionEnabled = false
+            pauseView.isHidden = true
+            pauseButton.isUserInteractionEnabled = false
+            pauseButton.isHidden = true
+            
+            replayButton.isHidden = false
+            finalScore.isHidden = false
+            finalScore.text = "Final Score: \(score) Pts"
+        }
+        
+        if !pause
+        {
+            seconds -= 1
+            timerLabel.text = "\(seconds)s"
+        }
     }
     
     @objc func addMole()
     {
-        var rand: Int
-        
-        repeat
+        if !pause
         {
-            rand = Int(arc4random_uniform(15))
-        } while moleArray[rand].hasHog
-        
-        moleArray[rand].hasHog = true
-        checkMoles()
+            var rand: Int
+            
+            repeat
+            {
+                rand = Int(arc4random_uniform(15))
+            } while moleArray[rand].hasHog
+            
+            moleArray[rand].hasHog = true
+            checkMoles()
+        }
+    }
+    
+    @IBAction func replay(_ sender: Any)
+    {
+        initialize()
     }
 }
-
-
-
-

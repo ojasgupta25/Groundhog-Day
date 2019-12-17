@@ -16,7 +16,6 @@
 		37A361862396C12400D50664 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37A361842396C12400D50664 /* LaunchScreen.storyboard */; };
 		37A361912396C12400D50664 /* Groundhog_DayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A361902396C12400D50664 /* Groundhog_DayTests.swift */; };
 		37A3619C2396C12400D50664 /* Groundhog_DayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A3619B2396C12400D50664 /* Groundhog_DayUITests.swift */; };
-		37AEFAA123A14C910058EE5C /* HammerScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AEFAA023A14C910058EE5C /* HammerScene.swift */; };
 		ADEE395723A3E1C4002A7574 /* GroundhogDay.atlas in Resources */ = {isa = PBXBuildFile; fileRef = ADEE395623A3E1C4002A7574 /* GroundhogDay.atlas */; };
 /* End PBXBuildFile section */
 
@@ -53,7 +52,6 @@
 		37A361972396C12400D50664 /* Groundhog DayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Groundhog DayUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		37A3619B2396C12400D50664 /* Groundhog_DayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Groundhog_DayUITests.swift; sourceTree = "<group>"; };
 		37A3619D2396C12400D50664 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		37AEFAA023A14C910058EE5C /* HammerScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HammerScene.swift; sourceTree = "<group>"; };
 		ADEE395623A3E1C4002A7574 /* GroundhogDay.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = GroundhogDay.atlas; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -110,7 +108,6 @@
 				37A361792396C12200D50664 /* Actions.sks */,
 				37A3617B2396C12200D50664 /* GameScene.swift */,
 				37A3617D2396C12200D50664 /* GameViewController.swift */,
-				37AEFAA023A14C910058EE5C /* HammerScene.swift */,
 				37A3617F2396C12200D50664 /* Main.storyboard */,
 				37A361822396C12400D50664 /* Assets.xcassets */,
 				37A361842396C12400D50664 /* LaunchScreen.storyboard */,
@@ -270,7 +267,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37AEFAA123A14C910058EE5C /* HammerScene.swift in Sources */,
 				37A3617C2396C12200D50664 /* GameScene.swift in Sources */,
 				37A3617E2396C12200D50664 /* GameViewController.swift in Sources */,
 				37A361762396C12200D50664 /* AppDelegate.swift in Sources */,
