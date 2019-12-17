@@ -55,7 +55,7 @@
                                             </attributedString>
                                         </state>
                                         <connections>
-                                            <action selector="replay:" destination="BV1-FR-VrT" eventType="touchUpInside" id="XWD-FE-4qs"/>
+                                            <action selector="replay:" destination="BV1-FR-VrT" eventType="touchUpInside" id="ZFh-f1-ooD"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -125,7 +125,7 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a32-DE-8RX">
                                                         <rect key="frame" x="0.0" y="0.0" width="153.66666666666666" height="91"/>
                                                         <connections>
-                                                            <action selector="hit:" destination="BV1-FR-VrT" eventType="touchUpInside" id="88b-Ti-Esn"/>
+                                                            <action selector="hit:" destination="BV1-FR-VrT" eventType="touchUpInside" id="Kzg-y9-hBc"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -157,7 +157,7 @@
                                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C5y-OQ-Dln">
                                                         <rect key="frame" x="0.0" y="0.0" width="153.66666666666666" height="91"/>
                                                         <connections>
-                                                            <action selector="hit:" destination="BV1-FR-VrT" eventType="touchUpInside" id="tlP-fv-a9v"/>
+                                                            <action selector="hit:" destination="BV1-FR-VrT" eventType="touchUpInside" id="UGX-da-pSy"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -189,7 +189,7 @@
                                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BZA-Ni-5Ov">
                                                         <rect key="frame" x="0.0" y="0.0" width="153.33333333333334" height="91"/>
                                                         <connections>
-                                                            <action selector="hit:" destination="BV1-FR-VrT" eventType="touchUpInside" id="g4b-ua-4Zx"/>
+                                                            <action selector="hit:" destination="BV1-FR-VrT" eventType="touchUpInside" id="BJE-41-o5l"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -221,7 +221,7 @@
                                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T6e-cX-wzo">
                                                         <rect key="frame" x="0.0" y="0.0" width="153.66666666666666" height="91"/>
                                                         <connections>
-                                                            <action selector="hit:" destination="BV1-FR-VrT" eventType="touchUpInside" id="lx4-V2-FQj"/>
+                                                            <action selector="hit:" destination="BV1-FR-VrT" eventType="touchUpInside" id="RIG-EP-CR5"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -253,7 +253,7 @@
                                                     <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dj9-Zf-Hiy">
                                                         <rect key="frame" x="0.0" y="0.0" width="153.66666666666666" height="91"/>
                                                         <connections>
-                                                            <action selector="hit:" destination="BV1-FR-VrT" eventType="touchUpInside" id="4WF-YQ-MtG"/>
+                                                            <action selector="hit:" destination="BV1-FR-VrT" eventType="touchUpInside" id="X75-ri-Ez4"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -290,7 +290,7 @@
                                                     <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zxd-M3-i4J">
                                                         <rect key="frame" x="0.0" y="0.0" width="153.66666666666666" height="90.666666666666671"/>
                                                         <connections>
-                                                            <action selector="hit:" destination="BV1-FR-VrT" eventType="touchUpInside" id="bHn-MD-sCO"/>
+                                                            <action selector="hit:" destination="BV1-FR-VrT" eventType="touchUpInside" id="JN5-IA-nbq"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -322,7 +322,7 @@
                                                     <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iIA-u7-1uP">
                                                         <rect key="frame" x="0.0" y="0.0" width="153.66666666666666" height="90.666666666666671"/>
                                                         <connections>
-                                                            <action selector="hit:" destination="BV1-FR-VrT" eventType="touchUpInside" id="fPB-Tl-vu0"/>
+                                                            <action selector="hit:" destination="BV1-FR-VrT" eventType="touchUpInside" id="80G-ST-fph"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -354,7 +354,7 @@
                                                     <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y1b-l2-EaP">
                                                         <rect key="frame" x="0.0" y="0.0" width="153.33333333333334" height="90.666666666666671"/>
                                                         <connections>
-                                                            <action selector="hit:" destination="BV1-FR-VrT" eventType="touchUpInside" id="2GZ-U1-cSz"/>
+                                                            <action selector="hit:" destination="BV1-FR-VrT" eventType="touchUpInside" id="GiK-wJ-squ"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -386,7 +386,7 @@
                                                     <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hey-3a-8HR">
                                                         <rect key="frame" x="0.0" y="0.0" width="153.66666666666666" height="90.666666666666671"/>
                                                         <connections>
-                                                            <action selector="hit:" destination="BV1-FR-VrT" eventType="touchUpInside" id="Kkf-Dq-e8h"/>
+                                                            <action selector="hit:" destination="BV1-FR-VrT" eventType="touchUpInside" id="JlT-nk-pLD"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -418,7 +418,7 @@
                                                     <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qa2-gR-H30">
                                                         <rect key="frame" x="0.0" y="0.0" width="153.66666666666666" height="90.666666666666671"/>
                                                         <connections>
-                                                            <action selector="hit:" destination="BV1-FR-VrT" eventType="touchUpInside" id="bDg-IN-QDM"/>
+                                                            <action selector="hit:" destination="BV1-FR-VrT" eventType="touchUpInside" id="HJc-ig-Fnd"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -455,7 +455,7 @@
                                                     <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NOO-PB-tvq">
                                                         <rect key="frame" x="0.0" y="0.0" width="153.66666666666666" height="90.666666666666671"/>
                                                         <connections>
-                                                            <action selector="hit:" destination="BV1-FR-VrT" eventType="touchUpInside" id="xgl-lV-9ja"/>
+                                                            <action selector="hit:" destination="BV1-FR-VrT" eventType="touchUpInside" id="hX8-lk-ma6"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -487,7 +487,7 @@
                                                     <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y7C-OV-rsp">
                                                         <rect key="frame" x="0.0" y="0.0" width="153.66666666666666" height="90.666666666666671"/>
                                                         <connections>
-                                                            <action selector="hit:" destination="BV1-FR-VrT" eventType="touchUpInside" id="v37-eJ-xVo"/>
+                                                            <action selector="hit:" destination="BV1-FR-VrT" eventType="touchUpInside" id="etZ-Py-BSb"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -519,7 +519,7 @@
                                                     <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pYC-Vd-Ok1">
                                                         <rect key="frame" x="0.0" y="0.0" width="153.33333333333334" height="90.666666666666671"/>
                                                         <connections>
-                                                            <action selector="hit:" destination="BV1-FR-VrT" eventType="touchUpInside" id="nMu-dw-GoF"/>
+                                                            <action selector="hit:" destination="BV1-FR-VrT" eventType="touchUpInside" id="8fK-p0-Dh2"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -551,7 +551,7 @@
                                                     <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RRI-AE-BJz">
                                                         <rect key="frame" x="0.0" y="0.0" width="153.66666666666666" height="90.666666666666671"/>
                                                         <connections>
-                                                            <action selector="hit:" destination="BV1-FR-VrT" eventType="touchUpInside" id="Mh0-9u-pjy"/>
+                                                            <action selector="hit:" destination="BV1-FR-VrT" eventType="touchUpInside" id="NGs-MJ-Xh2"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -583,7 +583,7 @@
                                                     <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LIR-oP-f4m">
                                                         <rect key="frame" x="0.0" y="0.0" width="153.66666666666666" height="90.666666666666671"/>
                                                         <connections>
-                                                            <action selector="hit:" destination="BV1-FR-VrT" eventType="touchUpInside" id="CV9-aN-9iz"/>
+                                                            <action selector="hit:" destination="BV1-FR-VrT" eventType="touchUpInside" id="xzK-IN-zxS"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -619,72 +619,72 @@
                                 </constraints>
                                 <state key="normal" title="Button" image="Pause"/>
                                 <connections>
-                                    <action selector="pause:" destination="BV1-FR-VrT" eventType="touchUpInside" id="UPz-zZ-q7g"/>
+                                    <action selector="pause:" destination="BV1-FR-VrT" eventType="touchUpInside" id="ipH-ct-yQe"/>
                                 </connections>
                             </button>
                         </subviews>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="Jfo-1o-NdR" secondAttribute="trailing" id="0JB-jR-cpE"/>
-                            <constraint firstItem="cS3-Y6-nq7" firstAttribute="top" secondItem="3se-qz-xqx" secondAttribute="top" id="1RY-0f-loV"/>
-                            <constraint firstItem="Jfo-1o-NdR" firstAttribute="centerY" secondItem="3se-qz-xqx" secondAttribute="centerY" id="7J2-4d-fwK"/>
-                            <constraint firstAttribute="trailing" secondItem="cS3-Y6-nq7" secondAttribute="trailing" id="EQY-qq-gaG"/>
-                            <constraint firstItem="U5o-oC-KYZ" firstAttribute="top" secondItem="3se-qz-xqx" secondAttribute="top" id="FUw-LD-rTR"/>
-                            <constraint firstItem="Jfo-1o-NdR" firstAttribute="leading" secondItem="3se-qz-xqx" secondAttribute="leading" id="G9J-Hk-WTL"/>
-                            <constraint firstItem="4qk-I5-YsI" firstAttribute="bottom" secondItem="U5o-oC-KYZ" secondAttribute="bottom" id="KS4-wr-vpw"/>
-                            <constraint firstAttribute="bottom" secondItem="cS3-Y6-nq7" secondAttribute="bottom" id="Loo-Y3-BXu"/>
-                            <constraint firstItem="Jfo-1o-NdR" firstAttribute="centerX" secondItem="3se-qz-xqx" secondAttribute="centerX" id="NJ3-u7-agZ"/>
-                            <constraint firstItem="uOM-w3-AJA" firstAttribute="top" secondItem="4qk-I5-YsI" secondAttribute="top" id="Qfy-QQ-xet"/>
-                            <constraint firstItem="4qk-I5-YsI" firstAttribute="trailing" secondItem="U5o-oC-KYZ" secondAttribute="trailing" id="Vn5-T8-jH5"/>
-                            <constraint firstItem="cS3-Y6-nq7" firstAttribute="leading" secondItem="3se-qz-xqx" secondAttribute="leading" id="YTI-td-ZGP"/>
-                            <constraint firstItem="U5o-oC-KYZ" firstAttribute="leading" secondItem="4qk-I5-YsI" secondAttribute="leading" id="lDw-0N-cMC"/>
-                            <constraint firstItem="Jfo-1o-NdR" firstAttribute="top" secondItem="3se-qz-xqx" secondAttribute="top" id="nmT-1o-Shy"/>
-                            <constraint firstItem="uOM-w3-AJA" firstAttribute="leading" secondItem="4qk-I5-YsI" secondAttribute="leading" constant="30" id="uGv-Vp-kqQ"/>
-                            <constraint firstItem="cS3-Y6-nq7" firstAttribute="top" secondItem="3se-qz-xqx" secondAttribute="topMargin" id="vIH-LJ-S6E"/>
-                            <constraint firstItem="cS3-Y6-nq7" firstAttribute="centerX" secondItem="3se-qz-xqx" secondAttribute="centerX" id="waI-5V-ci0"/>
-                            <constraint firstAttribute="bottom" secondItem="Jfo-1o-NdR" secondAttribute="bottom" id="xwY-1F-ykM"/>
-                            <constraint firstItem="cS3-Y6-nq7" firstAttribute="centerY" secondItem="3se-qz-xqx" secondAttribute="centerY" id="ziV-bV-9Yp"/>
+                            <constraint firstItem="U5o-oC-KYZ" firstAttribute="centerX" secondItem="4qk-I5-YsI" secondAttribute="centerX" id="6P2-u1-uYP"/>
+                            <constraint firstItem="4qk-I5-YsI" firstAttribute="bottom" secondItem="U5o-oC-KYZ" secondAttribute="bottom" id="765-QL-OQ0"/>
+                            <constraint firstItem="cS3-Y6-nq7" firstAttribute="top" secondItem="4qk-I5-YsI" secondAttribute="top" id="7rd-o3-aBO"/>
+                            <constraint firstItem="4qk-I5-YsI" firstAttribute="trailing" secondItem="U5o-oC-KYZ" secondAttribute="trailing" id="BKh-A7-KWy"/>
+                            <constraint firstItem="cS3-Y6-nq7" firstAttribute="centerX" secondItem="3se-qz-xqx" secondAttribute="centerX" id="FaU-p6-3us"/>
+                            <constraint firstAttribute="bottom" secondItem="Jfo-1o-NdR" secondAttribute="bottom" id="LvA-H5-jsa"/>
+                            <constraint firstItem="Jfo-1o-NdR" firstAttribute="top" secondItem="4qk-I5-YsI" secondAttribute="top" id="NkN-Lg-NOa"/>
+                            <constraint firstItem="Jfo-1o-NdR" firstAttribute="centerX" secondItem="3se-qz-xqx" secondAttribute="centerX" id="S9d-My-QmD"/>
+                            <constraint firstItem="Jfo-1o-NdR" firstAttribute="leading" secondItem="3se-qz-xqx" secondAttribute="leading" id="VkZ-10-K7m"/>
+                            <constraint firstItem="cS3-Y6-nq7" firstAttribute="centerY" secondItem="3se-qz-xqx" secondAttribute="centerY" id="bvA-Zs-i9s"/>
+                            <constraint firstItem="uOM-w3-AJA" firstAttribute="leading" secondItem="4qk-I5-YsI" secondAttribute="leading" constant="30" id="eE1-hS-Ppk"/>
+                            <constraint firstAttribute="bottom" secondItem="cS3-Y6-nq7" secondAttribute="bottom" id="iaf-Ku-fLb"/>
+                            <constraint firstItem="uOM-w3-AJA" firstAttribute="top" secondItem="4qk-I5-YsI" secondAttribute="top" id="lV7-01-Sc3"/>
+                            <constraint firstItem="U5o-oC-KYZ" firstAttribute="top" secondItem="4qk-I5-YsI" secondAttribute="top" id="miz-x9-9DY"/>
+                            <constraint firstItem="U5o-oC-KYZ" firstAttribute="leading" secondItem="4qk-I5-YsI" secondAttribute="leading" id="oYx-Q6-Y2B"/>
+                            <constraint firstItem="Jfo-1o-NdR" firstAttribute="centerY" secondItem="3se-qz-xqx" secondAttribute="centerY" id="pLF-sL-Ddu"/>
+                            <constraint firstItem="U5o-oC-KYZ" firstAttribute="centerY" secondItem="4qk-I5-YsI" secondAttribute="centerY" id="qbl-UR-DVM"/>
+                            <constraint firstAttribute="trailing" secondItem="cS3-Y6-nq7" secondAttribute="trailing" id="waT-Oj-g7i"/>
+                            <constraint firstAttribute="trailing" secondItem="Jfo-1o-NdR" secondAttribute="trailing" id="wel-5a-UHd"/>
+                            <constraint firstItem="cS3-Y6-nq7" firstAttribute="leading" secondItem="3se-qz-xqx" secondAttribute="leading" id="zwv-r4-2ap"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4qk-I5-YsI"/>
                     </view>
                     <connections>
-                        <outlet property="finalScore" destination="QBk-3n-q6j" id="cjm-aI-b3V"/>
-                        <outlet property="gameScreen" destination="U5o-oC-KYZ" id="Did-lI-DMi"/>
-                        <outlet property="mainView" destination="3se-qz-xqx" id="D9p-mo-dJ2"/>
-                        <outlet property="pauseButton" destination="uOM-w3-AJA" id="pie-ww-cvH"/>
-                        <outlet property="pauseView" destination="Jfo-1o-NdR" id="VBC-ku-WRy"/>
-                        <outlet property="replayButton" destination="2cA-cA-Nfm" id="Qck-yz-hKS"/>
-                        <outlet property="scoreLabel" destination="SZc-7P-r9l" id="Hw0-Am-a5X"/>
-                        <outlet property="timerLabel" destination="20L-74-0Mx" id="r7b-ll-FsZ"/>
-                        <outletCollection property="buttonArray" destination="a32-DE-8RX" collectionClass="NSMutableArray" id="WE8-qg-Zjz"/>
-                        <outletCollection property="buttonArray" destination="C5y-OQ-Dln" collectionClass="NSMutableArray" id="4kS-Ul-AGj"/>
-                        <outletCollection property="buttonArray" destination="BZA-Ni-5Ov" collectionClass="NSMutableArray" id="L3d-dA-SW2"/>
-                        <outletCollection property="buttonArray" destination="T6e-cX-wzo" collectionClass="NSMutableArray" id="7Rv-NH-uZP"/>
-                        <outletCollection property="buttonArray" destination="dj9-Zf-Hiy" collectionClass="NSMutableArray" id="vhw-uf-eoc"/>
-                        <outletCollection property="buttonArray" destination="Zxd-M3-i4J" collectionClass="NSMutableArray" id="tx0-UB-Pzf"/>
-                        <outletCollection property="buttonArray" destination="iIA-u7-1uP" collectionClass="NSMutableArray" id="EIX-Hc-sU6"/>
-                        <outletCollection property="buttonArray" destination="y1b-l2-EaP" collectionClass="NSMutableArray" id="Jjp-qR-sKS"/>
-                        <outletCollection property="buttonArray" destination="hey-3a-8HR" collectionClass="NSMutableArray" id="CoM-Bf-guP"/>
-                        <outletCollection property="buttonArray" destination="Qa2-gR-H30" collectionClass="NSMutableArray" id="PXf-1Q-N1e"/>
-                        <outletCollection property="buttonArray" destination="NOO-PB-tvq" collectionClass="NSMutableArray" id="ASc-Id-ML0"/>
-                        <outletCollection property="buttonArray" destination="Y7C-OV-rsp" collectionClass="NSMutableArray" id="noL-nO-KDf"/>
-                        <outletCollection property="buttonArray" destination="pYC-Vd-Ok1" collectionClass="NSMutableArray" id="aQc-gk-ocg"/>
-                        <outletCollection property="buttonArray" destination="RRI-AE-BJz" collectionClass="NSMutableArray" id="4Lx-gc-gCx"/>
-                        <outletCollection property="buttonArray" destination="LIR-oP-f4m" collectionClass="NSMutableArray" id="gWC-Cy-HmX"/>
-                        <outletCollection property="moleImageArray" destination="poc-kt-axt" collectionClass="NSMutableArray" id="IqN-mj-Cdd"/>
-                        <outletCollection property="moleImageArray" destination="ixB-cO-6Q8" collectionClass="NSMutableArray" id="99K-SE-2Sc"/>
-                        <outletCollection property="moleImageArray" destination="4Ju-Ub-h27" collectionClass="NSMutableArray" id="B3p-Ut-Vmg"/>
-                        <outletCollection property="moleImageArray" destination="OOi-Sh-665" collectionClass="NSMutableArray" id="cZS-n8-pyy"/>
-                        <outletCollection property="moleImageArray" destination="vmb-Cj-A6C" collectionClass="NSMutableArray" id="L3F-uq-Hj7"/>
-                        <outletCollection property="moleImageArray" destination="KxG-4N-4zm" collectionClass="NSMutableArray" id="pLU-lD-Sxe"/>
-                        <outletCollection property="moleImageArray" destination="GOa-kH-SBg" collectionClass="NSMutableArray" id="eRR-gp-Bdj"/>
-                        <outletCollection property="moleImageArray" destination="DDL-Mt-31i" collectionClass="NSMutableArray" id="MkP-Uf-iNE"/>
-                        <outletCollection property="moleImageArray" destination="ihs-K7-Ws0" collectionClass="NSMutableArray" id="RqA-LA-Z8t"/>
-                        <outletCollection property="moleImageArray" destination="t4M-xr-wcO" collectionClass="NSMutableArray" id="ITe-PP-orD"/>
-                        <outletCollection property="moleImageArray" destination="58I-Wp-xDH" collectionClass="NSMutableArray" id="2qu-nA-y8A"/>
-                        <outletCollection property="moleImageArray" destination="xEX-k5-kwJ" collectionClass="NSMutableArray" id="Yp6-85-xpW"/>
-                        <outletCollection property="moleImageArray" destination="cyc-pw-U6v" collectionClass="NSMutableArray" id="r3Y-am-mIN"/>
-                        <outletCollection property="moleImageArray" destination="EcB-Gc-fMZ" collectionClass="NSMutableArray" id="SSf-gR-dAI"/>
-                        <outletCollection property="moleImageArray" destination="Iyi-DQ-af5" collectionClass="NSMutableArray" id="QAO-au-fTr"/>
+                        <outlet property="finalScore" destination="QBk-3n-q6j" id="KTd-a5-Qbk"/>
+                        <outlet property="gameScreen" destination="U5o-oC-KYZ" id="7m9-vq-Rlg"/>
+                        <outlet property="pauseButton" destination="uOM-w3-AJA" id="PHB-I2-1zC"/>
+                        <outlet property="pauseView" destination="Jfo-1o-NdR" id="MPU-N1-fRx"/>
+                        <outlet property="replayButton" destination="2cA-cA-Nfm" id="6pv-Le-cwP"/>
+                        <outlet property="scoreLabel" destination="SZc-7P-r9l" id="0Qo-Kg-TE8"/>
+                        <outlet property="timerLabel" destination="20L-74-0Mx" id="UmE-2G-NPQ"/>
+                        <outletCollection property="molesImage" destination="poc-kt-axt" collectionClass="NSMutableArray" id="ME7-lj-8te"/>
+                        <outletCollection property="molesImage" destination="ixB-cO-6Q8" collectionClass="NSMutableArray" id="ohL-dg-jYK"/>
+                        <outletCollection property="molesImage" destination="4Ju-Ub-h27" collectionClass="NSMutableArray" id="wsA-2n-nWR"/>
+                        <outletCollection property="molesImage" destination="OOi-Sh-665" collectionClass="NSMutableArray" id="sEk-Jy-542"/>
+                        <outletCollection property="molesImage" destination="vmb-Cj-A6C" collectionClass="NSMutableArray" id="Huh-DU-iD8"/>
+                        <outletCollection property="molesImage" destination="KxG-4N-4zm" collectionClass="NSMutableArray" id="2SG-PZ-2pB"/>
+                        <outletCollection property="molesImage" destination="GOa-kH-SBg" collectionClass="NSMutableArray" id="dS3-cy-UuU"/>
+                        <outletCollection property="molesImage" destination="DDL-Mt-31i" collectionClass="NSMutableArray" id="Evs-gG-Aqf"/>
+                        <outletCollection property="molesImage" destination="ihs-K7-Ws0" collectionClass="NSMutableArray" id="hjx-qC-cLN"/>
+                        <outletCollection property="molesImage" destination="t4M-xr-wcO" collectionClass="NSMutableArray" id="eO6-M7-njR"/>
+                        <outletCollection property="molesImage" destination="58I-Wp-xDH" collectionClass="NSMutableArray" id="3mW-OR-T1O"/>
+                        <outletCollection property="molesImage" destination="xEX-k5-kwJ" collectionClass="NSMutableArray" id="Mm3-68-Naf"/>
+                        <outletCollection property="molesImage" destination="cyc-pw-U6v" collectionClass="NSMutableArray" id="Ft9-2v-j2T"/>
+                        <outletCollection property="molesImage" destination="EcB-Gc-fMZ" collectionClass="NSMutableArray" id="TUK-HQ-NVP"/>
+                        <outletCollection property="molesImage" destination="Iyi-DQ-af5" collectionClass="NSMutableArray" id="2Hk-DG-wyj"/>
+                        <outletCollection property="buttons" destination="a32-DE-8RX" collectionClass="NSMutableArray" id="SAM-D5-rVA"/>
+                        <outletCollection property="buttons" destination="C5y-OQ-Dln" collectionClass="NSMutableArray" id="lu8-RU-0Bk"/>
+                        <outletCollection property="buttons" destination="BZA-Ni-5Ov" collectionClass="NSMutableArray" id="BRD-jA-LHp"/>
+                        <outletCollection property="buttons" destination="T6e-cX-wzo" collectionClass="NSMutableArray" id="v70-C6-maj"/>
+                        <outletCollection property="buttons" destination="dj9-Zf-Hiy" collectionClass="NSMutableArray" id="G4A-mn-poc"/>
+                        <outletCollection property="buttons" destination="Zxd-M3-i4J" collectionClass="NSMutableArray" id="Zec-vX-E0a"/>
+                        <outletCollection property="buttons" destination="iIA-u7-1uP" collectionClass="NSMutableArray" id="jeQ-m3-6Jm"/>
+                        <outletCollection property="buttons" destination="y1b-l2-EaP" collectionClass="NSMutableArray" id="p6V-qY-JwF"/>
+                        <outletCollection property="buttons" destination="hey-3a-8HR" collectionClass="NSMutableArray" id="v4c-rN-U8y"/>
+                        <outletCollection property="buttons" destination="Qa2-gR-H30" collectionClass="NSMutableArray" id="8Ox-QM-rv9"/>
+                        <outletCollection property="buttons" destination="NOO-PB-tvq" collectionClass="NSMutableArray" id="7np-w2-qjJ"/>
+                        <outletCollection property="buttons" destination="Y7C-OV-rsp" collectionClass="NSMutableArray" id="WKU-Pv-jS7"/>
+                        <outletCollection property="buttons" destination="pYC-Vd-Ok1" collectionClass="NSMutableArray" id="JTF-Bf-TDX"/>
+                        <outletCollection property="buttons" destination="RRI-AE-BJz" collectionClass="NSMutableArray" id="t2x-5o-MU5"/>
+                        <outletCollection property="buttons" destination="LIR-oP-f4m" collectionClass="NSMutableArray" id="zxh-lk-my3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>

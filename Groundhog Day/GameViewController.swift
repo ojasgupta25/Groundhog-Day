@@ -14,10 +14,8 @@ import UserNotifications
 
 class GameViewController: UIViewController
 {
-    @IBOutlet var mainView: SKView!
-    @IBOutlet var viewArray: [UIView]! //Literally worthless, find a way to remove it without destroying all the other outlet collections
-    @IBOutlet var buttonArray: [UIButton]!
-    @IBOutlet var moleImageArray: [UIImageView]!
+    @IBOutlet var buttons: [UIButton]! //Working
+    @IBOutlet var molesImage: [UIImageView]! //Broke, look at the connections and try to fix them, deleting it will NOT work, basically it is a tumor in our code
     
     @IBOutlet var scoreLabel: UILabel!
     @IBOutlet var timerLabel: UILabel!
@@ -44,7 +42,7 @@ class GameViewController: UIViewController
     {
         super.viewDidLoad()
         
-        for (index, mole) in moleImageArray.enumerated()
+        for (index, mole) in molesImage.enumerated()
         {
             mole.isHidden = true
             moleArray.append(Pit.init(index, difficulty))
@@ -89,7 +87,7 @@ class GameViewController: UIViewController
         pauseButton.isUserInteractionEnabled = true
         pauseButton.isHidden = false
         
-        for (index, mole) in moleImageArray.enumerated()
+        for (index, mole) in molesImage.enumerated()
         {
             mole.isHidden = true
             moleArray.append(Pit.init(index, difficulty))
@@ -105,7 +103,7 @@ class GameViewController: UIViewController
         {
             pauseView.alpha = 0.3
         }
-        
+            
         else
         {
             pauseView.alpha = 0
@@ -123,7 +121,7 @@ class GameViewController: UIViewController
                 multiplier = 0
                 redText = 0.5
             }
-            
+                
             else
             {
                 moleArray[sender.tag].hasHog = false
@@ -150,12 +148,12 @@ class GameViewController: UIViewController
             {
                 if mole.hasHog
                 {
-                    moleImageArray[index].isHidden = false
+                    molesImage[index].isHidden = false
                 }
-                
+                    
                 else
                 {
-                    moleImageArray[index].isHidden = true
+                    molesImage[index].isHidden = true
                 }
             }
         }
@@ -194,7 +192,7 @@ class GameViewController: UIViewController
             timerLabel.textColor = .red
             redText -= 0.1
         }
-        
+            
         else
         {
             timerLabel.textColor = .black
@@ -300,3 +298,5 @@ class GameViewController: UIViewController
         initialize()
     }
 }
+
+
