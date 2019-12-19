@@ -42,9 +42,9 @@ class GameViewController: UIViewController
     {
         super.viewDidLoad()
         
-        for (index, mole) in molesImage.enumerated()
+        for index in 0...14
         {
-            mole.isHidden = true
+            molesImage[index].isHidden = true
             moleArray.append(Pit.init(index, difficulty))
         }
         
@@ -87,9 +87,9 @@ class GameViewController: UIViewController
         pauseButton.isUserInteractionEnabled = true
         pauseButton.isHidden = false
         
-        for (index, mole) in molesImage.enumerated()
+        for index in 0...14
         {
-            mole.isHidden = true
+            molesImage[index].isHidden = true
             moleArray.append(Pit.init(index, difficulty))
         }
     }
@@ -144,9 +144,9 @@ class GameViewController: UIViewController
     {
         if !pause
         {
-            for (index, mole) in moleArray.enumerated()
+            for index in 0...14
             {
-                if mole.hasHog
+                if moleArray[index].hasHog
                 {
                     molesImage[index].isHidden = false
                 }
@@ -211,15 +211,15 @@ class GameViewController: UIViewController
             leastIndex = Int() //Mole with the lowest time left
             leastLife = 1/difficulty //Index of the mole with the lowest time left
             
-            for (index, mole) in moleArray.enumerated()
+            for index in 0...14
             {
-                if mole.hasHog
+                if moleArray[index].hasHog
                 {
                     failSafe += 1
                     
-                    if mole.timeRemaining <= leastLife
+                    if moleArray[index].timeRemaining <= leastLife
                     {
-                        leastLife = mole.timeRemaining
+                        leastLife = moleArray[index].timeRemaining
                         leastIndex = index
                     }
                 }
