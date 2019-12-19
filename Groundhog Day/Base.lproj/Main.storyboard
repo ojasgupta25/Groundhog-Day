@@ -650,6 +650,7 @@
                     <connections>
                         <outlet property="finalScore" destination="QBk-3n-q6j" id="KTd-a5-Qbk"/>
                         <outlet property="gameScreen" destination="U5o-oC-KYZ" id="7m9-vq-Rlg"/>
+                        <outlet property="mainView" destination="3se-qz-xqx" id="8da-7r-GlT"/>
                         <outlet property="pauseButton" destination="uOM-w3-AJA" id="PHB-I2-1zC"/>
                         <outlet property="pauseView" destination="Jfo-1o-NdR" id="MPU-N1-fRx"/>
                         <outlet property="replayButton" destination="2cA-cA-Nfm" id="6pv-Le-cwP"/>

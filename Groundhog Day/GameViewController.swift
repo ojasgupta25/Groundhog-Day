@@ -12,10 +12,12 @@ import GameplayKit
 import Foundation
 import UserNotifications
 
+
 class GameViewController: UIViewController
 {
-    @IBOutlet var buttons: [UIButton]! //Working
-    @IBOutlet var molesImage: [UIImageView]! //Broke, look at the connections and try to fix them, deleting it will NOT work, basically it is a tumor in our code
+    @IBOutlet weak var mainView: SKView!
+    @IBOutlet var buttons: [UIButton]!
+    @IBOutlet var molesImage: [UIImageView]!
     
     @IBOutlet var scoreLabel: UILabel!
     @IBOutlet var timerLabel: UILabel!
@@ -37,6 +39,17 @@ class GameViewController: UIViewController
     var multiplier = Int()
     var pause = Bool()
     var redText = Double()
+
+    var scene: HammerScene?
+    
+    override func viewDidAppear(_ animated: Bool)
+    {
+        super.viewDidAppear(animated)
+        
+        self.scene = HammerScene(size: CGSize(width: self.mainView.frame.size.width, height: self.mainView.frame.size.height))
+        
+        self.mainView.presentScene(scene)
+    }
     
     override func viewDidLoad()
     {
@@ -45,7 +58,7 @@ class GameViewController: UIViewController
         for index in 0...14
         {
             molesImage[index].isHidden = true
-            moleArray.append(Pit.init(index, difficulty))
+            moleArray.append(Pit.init(index, difficulty, index))
         }
         
         _ = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(countDown), userInfo: nil, repeats: true)
@@ -90,7 +103,7 @@ class GameViewController: UIViewController
         for index in 0...14
         {
             molesImage[index].isHidden = true
-            moleArray.append(Pit.init(index, difficulty))
+            moleArray.append(Pit.init(index, difficulty, index))
         }
     }
     
@@ -114,6 +127,11 @@ class GameViewController: UIViewController
     {
         if !pause
         {
+            if let scene = self.scene
+            {
+                scene.runHit(x: (buttons[sender.tag].bounds.maxX + buttons[sender.tag].bounds.minX) / 2 , y: (buttons[sender.tag].bounds.maxY + buttons[sender.tag].bounds.minY) / 2)
+            }
+            
             if !moleArray[sender.tag].hasHog
             {
                 penalize(5)
@@ -177,11 +195,13 @@ class GameViewController: UIViewController
     {
         var hasHog: Bool //If a hog is visibile in a pit
         var timeRemaining: Double //Time for the mole to be on the screen
+        var number: Int
         
-        init(_ ind: Int, _ diff: Double)
+        init(_ ind: Int, _ diff: Double, _ num: Int)
         {
             hasHog = false
             timeRemaining = 2.0/diff
+            number = num
         }
     }
     
@@ -244,10 +264,10 @@ class GameViewController: UIViewController
                     if mole.timeRemaining <= 0
                     {
                         mole.hasHog = false
+                        molesImage[mole.number].isHidden = true
                         mole.timeRemaining = 1/difficulty
                         combo = 0
                         multiplier = 0
-                        checkMoles()
                     }
                 }
             }
@@ -289,6 +309,7 @@ class GameViewController: UIViewController
             } while moleArray[rand].hasHog
             
             moleArray[rand].hasHog = true
+            moleArray[rand].timeRemaining = 1/difficulty
             checkMoles()
         }
     }
@@ -298,5 +319,3 @@ class GameViewController: UIViewController
         initialize()
     }
 }
-
-
